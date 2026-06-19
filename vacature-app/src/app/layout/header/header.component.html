@@ -1,0 +1,58 @@
+<mat-toolbar class="app-toolbar" role="banner">
+  <div class="toolbar-inner">
+
+    <!-- Brand -->
+    <a routerLink="/" class="brand" aria-label="Vacancy Explorer – naar startpagina">
+      <div class="brand-logo" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="rgba(255,255,255,0.12)" />
+          <path d="M8 22L16 8L24 22H8Z" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round" />
+          <circle cx="16" cy="16" r="3" fill="#F59E0B" />
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">Vacancy<span class="brand-accent">Explorer</span></span>
+        <span class="brand-sub">Defensie Vacatureplatform</span>
+      </div>
+    </a>
+
+    <!-- Search Bar (center) -->
+    <div class="search-container">
+      <app-search-bar />
+    </div>
+
+    <!-- User Area -->
+    <div class="user-area">
+      <button mat-icon-button class="notif-btn" aria-label="Notificaties" title="Notificaties">
+        <mat-icon>notifications_none</mat-icon>
+      </button>
+
+      <button mat-button class="user-btn" [matMenuTriggerFor]="userMenu" aria-label="Gebruikersmenu">
+        <div class="avatar" aria-hidden="true">G</div>
+        <span class="user-name">Gast</span>
+        <mat-icon class="chevron">expand_more</mat-icon>
+      </button>
+
+      <mat-menu #userMenu="matMenu">
+        <div class="menu-header" mat-menu-item disabled>
+          <mat-icon>account_circle</mat-icon>
+          <div class="menu-user-info">
+            <span class="menu-username">Gast gebruiker</span>
+            <span class="menu-status">Niet ingelogd</span>
+          </div>
+        </div>
+        <mat-divider />
+        <button mat-menu-item (click)="auth.login()">
+          <mat-icon>login</mat-icon>
+          <span>Inloggen via Keycloak</span>
+        </button>
+        <mat-divider />
+        <button mat-menu-item disabled>
+          <mat-icon>help_outline</mat-icon>
+          <span>Help & Contact</span>
+        </button>
+      </mat-menu>
+    </div>
+
+  </div>
+</mat-toolbar>

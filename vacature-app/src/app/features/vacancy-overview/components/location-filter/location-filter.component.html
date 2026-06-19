@@ -1,0 +1,24 @@
+<mat-form-field appearance="outline" class="location-field">
+  <mat-label>Locatie</mat-label>
+  <mat-select
+    [value]="filterService.locations()"
+    [multiple]="true"
+    (selectionChange)="onChange($event)"
+    aria-label="Locatie"
+  >
+    @for (loc of locations(); track loc) {
+      <mat-option [value]="loc">{{ loc }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+
+@if (filterService.locations().length > 0) {
+  <mat-chip-set class="loc-chips">
+    @for (loc of filterService.locations(); track loc) {
+      <mat-chip (removed)="filterService.toggleLocation(loc)">
+        {{ loc }}
+        <mat-icon matChipRemove>cancel</mat-icon>
+      </mat-chip>
+    }
+  </mat-chip-set>
+}

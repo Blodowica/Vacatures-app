@@ -1,0 +1,43 @@
+<div class="calendar-outer">
+  <div class="calendar-scroll">
+    <div class="calendar">
+      <!-- Time axis -->
+      <div class="time-axis">
+        @for (hour of hours; track hour) {
+          <div class="time-label" [style.top.px]="(hour - startHour) * 60">
+            {{ hour }}:00
+          </div>
+        }
+      </div>
+
+      <!-- Day columns -->
+      @for (day of days; track day.key) {
+        <div class="day-col">
+          <div class="day-header">{{ day.label }}</div>
+          <div class="day-body" [style.height.px]="calendarHeight">
+            <!-- Hour grid lines -->
+            @for (hour of hours; track hour) {
+              <div class="grid-line" [style.top.px]="(hour - startHour) * 60"></div>
+            }
+            <!-- Activity blocks -->
+            @for (block of blocksForDay(day.key); track block.activity.title + block.activity.startTime) {
+              <div
+                class="activity-block"
+                [style.top.px]="block.topPx"
+                [style.height.px]="block.heightPx"
+                [style.border-left-color]="block.color"
+                [style.background]="block.color + '18'"
+                [title]="block.activity.title + ' (' + block.activity.startTime + '-' + block.activity.endTime + '): ' + block.activity.description"
+              >
+                <div class="block-time">{{ block.activity.startTime }}</div>
+                @if (block.heightPx >= 35) {
+                  <div class="block-title">{{ block.activity.title }}</div>
+                }
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

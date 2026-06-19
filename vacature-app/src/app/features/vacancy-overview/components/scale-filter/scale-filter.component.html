@@ -1,0 +1,10 @@
+<mat-chip-listbox
+  [value]="filterService.scale()"
+  (change)="onChange($event)"
+  aria-label="Schaal"
+  class="chip-list"
+>
+  @for (scale of scales(); track scale) {
+    <mat-chip-option [value]="scale">{{ scale }}</mat-chip-option>
+  }
+</mat-chip-listbox>

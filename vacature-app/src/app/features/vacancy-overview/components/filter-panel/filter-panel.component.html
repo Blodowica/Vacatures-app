@@ -1,0 +1,59 @@
+<div class="panel">
+  <div class="panel-header">
+    <h3 class="panel-title">
+      <mat-icon class="panel-icon">tune</mat-icon>
+      Filters
+      @if (filterService.activeFilterCount() > 0) {
+        <span
+          class="filter-badge"
+          [matBadge]="filterService.activeFilterCount()"
+          matBadgeOverlap="false"
+          matBadgeColor="warn"
+        ></span>
+      }
+    </h3>
+    @if (filterService.activeFilterCount() > 0) {
+      <button mat-button class="reset-btn" (click)="filterService.resetFilters()">
+        <mat-icon>refresh</mat-icon>
+        Wissen
+      </button>
+    }
+  </div>
+
+  <mat-divider />
+
+  <div class="filter-sections">
+    <section class="filter-section">
+      <h4 class="section-label">Personeelstype</h4>
+      <app-personnel-type-filter />
+    </section>
+
+    @if (filterService.personnelType() === 'military' || filterService.personnelType() === 'all') {
+      <section class="filter-section">
+        <h4 class="section-label">Rang</h4>
+        <app-rank-filter />
+      </section>
+    }
+
+    @if (filterService.personnelType() === 'civilian' || filterService.personnelType() === 'all') {
+      <section class="filter-section">
+        <h4 class="section-label">Schaal</h4>
+        <app-scale-filter />
+      </section>
+    }
+
+    <mat-divider />
+
+    <section class="filter-section">
+      <h4 class="section-label">Functiedomein</h4>
+      <app-function-domain-filter />
+    </section>
+
+    <mat-divider />
+
+    <section class="filter-section">
+      <h4 class="section-label">Locatie</h4>
+      <app-location-filter />
+    </section>
+  </div>
+</div>

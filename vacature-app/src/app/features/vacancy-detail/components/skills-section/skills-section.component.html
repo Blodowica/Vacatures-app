@@ -1,0 +1,29 @@
+<div class="skills">
+  @for (skill of skills(); track skill.skillName) {
+    <div class="skill-item">
+      <div class="skill-header">
+        <span class="skill-name">{{ skill.skillName }}</span>
+        <span class="skill-level-label" [style.color]="levelColor(skill.level)">
+          {{ levelLabel(skill.level) }}
+        </span>
+      </div>
+      <p class="skill-desc">{{ skill.description }}</p>
+      <div class="skill-bar-track">
+        <div
+          class="skill-bar-fill"
+          [style.width.%]="skill.level * 20"
+          [style.background-color]="levelColor(skill.level)"
+        ></div>
+      </div>
+      <div class="skill-dots">
+        @for (dot of [1, 2, 3, 4, 5]; track dot) {
+          <span
+            class="skill-dot"
+            [class.filled]="dot <= skill.level"
+            [style.background-color]="dot <= skill.level ? levelColor(skill.level) : undefined"
+          ></span>
+        }
+      </div>
+    </div>
+  }
+</div>

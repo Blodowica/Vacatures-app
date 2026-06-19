@@ -20,6 +20,12 @@ export interface Skill {
   description: string;
 }
 
+export interface ContactPerson {
+  name: string;
+  email: string;
+  phone: string;
+}
+
 export interface Vacancy {
   id: string;
   title: string;
@@ -34,4 +40,5 @@ export interface Vacancy {
   weeklyCalendar: WeeklyActivity[];
   workDistribution: WorkDistribution[];
   skills: Skill[];
+  contactPerson: ContactPerson;
 }

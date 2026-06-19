@@ -1,0 +1,29 @@
+<div class="contact" [class.contact--dark]="theme() === 'dark'">
+  <p class="contact-label">Contactpersoon</p>
+
+  <div class="contact-inner">
+    <div class="contact-avatar" aria-hidden="true">{{ initials() }}</div>
+
+    <div class="contact-info">
+      <p class="contact-name">{{ contactPerson().name }}</p>
+
+      <a
+        class="contact-row"
+        [href]="'mailto:' + contactPerson().email"
+        [attr.aria-label]="'Stuur e-mail naar ' + contactPerson().name"
+      >
+        <mat-icon class="contact-icon">mail_outline</mat-icon>
+        <span>{{ contactPerson().email }}</span>
+      </a>
+
+      <a
+        class="contact-row"
+        [href]="'tel:' + contactPerson().phone"
+        [attr.aria-label]="'Bel ' + contactPerson().name"
+      >
+        <mat-icon class="contact-icon">phone</mat-icon>
+        <span>{{ contactPerson().phone }}</span>
+      </a>
+    </div>
+  </div>
+</div>

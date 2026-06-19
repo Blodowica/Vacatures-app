@@ -1,0 +1,10 @@
+<mat-chip-listbox
+  [value]="filterService.rank()"
+  (change)="onChange($event)"
+  aria-label="Rang"
+  class="chip-list"
+>
+  @for (rank of ranks(); track rank) {
+    <mat-chip-option [value]="rank">{{ rank }}</mat-chip-option>
+  }
+</mat-chip-listbox>

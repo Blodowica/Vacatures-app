@@ -1,0 +1,16 @@
+<mat-form-field appearance="outline" class="search-field">
+  <mat-icon matPrefix class="search-prefix-icon">search</mat-icon>
+  <input
+    matInput
+    [formControl]="searchControl"
+    placeholder="Zoek op titel, afdeling, locatie..."
+    type="search"
+    autocomplete="off"
+    aria-label="Vacatures zoeken"
+  />
+  @if (searchControl.value) {
+    <button matSuffix mat-icon-button aria-label="Wis zoekopdracht" (click)="clear()">
+      <mat-icon>close</mat-icon>
+    </button>
+  }
+</mat-form-field>

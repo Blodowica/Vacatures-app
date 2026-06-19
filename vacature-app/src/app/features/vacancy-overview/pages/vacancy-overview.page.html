@@ -1,0 +1,66 @@
+<!-- Mobile filter overlay backdrop -->
+@if (showMobileFilters()) {
+  <div class="backdrop" (click)="closeMobileFilters()" aria-hidden="true"></div>
+}
+
+<div class="page">
+
+  <!-- Sidebar (desktop: always visible | mobile: slide-in overlay) -->
+  <aside class="sidebar" [class.sidebar-open]="showMobileFilters()" aria-label="Filteropties">
+    <div class="sidebar-inner">
+      <app-filter-panel (close)="closeMobileFilters()" />
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main" id="main-content">
+
+    <!-- Results toolbar -->
+    <div class="results-bar">
+      <div class="results-bar-left">
+        <!-- Mobile filter toggle -->
+        <button
+          mat-button
+          class="filter-toggle"
+          (click)="toggleMobileFilters()"
+          [attr.aria-expanded]="showMobileFilters()"
+          aria-controls="sidebar"
+        >
+          <mat-icon>tune</mat-icon>
+          Filters
+          @if (filterService.activeFilterCount() > 0) {
+            <span
+              class="filter-count-badge"
+              [matBadge]="filterService.activeFilterCount()"
+              matBadgeSize="small"
+              matBadgeColor="warn"
+            ></span>
+          }
+        </button>
+
+        <div class="results-meta">
+          <h1 class="results-title">Vacatures</h1>
+          <span class="results-count">
+            <strong>{{ filterService.totalCount() }}</strong>
+            {{ filterService.totalCount() === 1 ? 'resultaat' : 'resultaten' }}
+          </span>
+        </div>
+      </div>
+
+      <div class="results-bar-right">
+        @if (filterService.activeFilterCount() > 0) {
+          <button mat-button class="clear-filters-btn" (click)="filterService.resetFilters()">
+            <mat-icon>close</mat-icon>
+            Filters wissen ({{ filterService.activeFilterCount() }})
+          </button>
+        }
+      </div>
+    </div>
+
+    <!-- Vacancy results -->
+    <div class="results-area">
+      <app-vacancy-list />
+    </div>
+
+  </main>
+</div>

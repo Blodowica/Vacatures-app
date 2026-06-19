@@ -1,0 +1,145 @@
+@if (vacancy()) {
+  <div class="page">
+    <!-- Back -->
+    <div class="back-bar">
+      <div class="inner">
+        <a routerLink="/" class="back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+          Terug naar vacatures
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="hero">
+      <div class="inner">
+        <div class="hero-inner">
+
+          <!-- Left: job info -->
+          <div class="hero-left">
+            <div class="hero-meta">
+              <app-badge [variant]="vacancy()!.personnelType === 'military' ? 'military' : 'civilian'">
+                {{ vacancy()!.personnelType === 'military' ? 'Militair' : 'Burgerpersoneel' }}
+              </app-badge>
+              <app-badge variant="domain">{{ vacancy()!.functionDomain }}</app-badge>
+              @for (loc of vacancy()!.locations; track loc) {
+                <app-badge variant="location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:3px">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  {{ loc }}
+                </app-badge>
+              }
+            </div>
+            <h1 class="hero-title">{{ vacancy()!.title }}</h1>
+            <p class="hero-dept">{{ vacancy()!.department }}</p>
+            <div class="hero-tags">
+              @if (vacancy()!.rank) {
+                <div class="hero-tag">
+                  <span class="tag-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  </span>
+                  <span class="tag-label">Rang</span>
+                  <span class="tag-value">{{ vacancy()!.rank }}</span>
+                </div>
+              }
+              @if (vacancy()!.scale) {
+                <div class="hero-tag">
+                  <span class="tag-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                  </span>
+                  <span class="tag-label">Schaal</span>
+                  <span class="tag-value">{{ vacancy()!.scale }}</span>
+                </div>
+              }
+            </div>
+          </div>
+
+          <!-- Right: contact card -->
+          <div class="hero-right">
+            <app-contact-section [contactPerson]="vacancy()!.contactPerson" theme="dark" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="content-area">
+      <div class="inner">
+        <div class="sections">
+
+          <!-- What do I do -->
+          <section class="section">
+            <div class="section-heading">
+              <div class="section-num">01</div>
+              <h2 class="section-title">Wat doe ik?</h2>
+            </div>
+            <div class="section-body">
+              <div class="prose-block">
+                <h3 class="prose-title">Over de rol</h3>
+                <p class="prose-text">{{ vacancy()!.roleDescription }}</p>
+              </div>
+              <div class="prose-block">
+                <h3 class="prose-title">Dagelijkse activiteiten</h3>
+                <p class="prose-text">{{ vacancy()!.dailyActivities }}</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Weekly Calendar -->
+          <section class="section">
+            <div class="section-heading">
+              <div class="section-num">02</div>
+              <h2 class="section-title">Hoe ziet mijn week eruit?</h2>
+            </div>
+            <div class="section-body">
+              <app-weekly-calendar [activities]="vacancy()!.weeklyCalendar" />
+              <div class="calendar-legend">
+                <span class="cal-legend-item"><span class="cal-dot" style="background:#3B82F6"></span>Overleg</span>
+                <span class="cal-legend-item"><span class="cal-dot" style="background:#10B981"></span>Ontwikkeling</span>
+                <span class="cal-legend-item"><span class="cal-dot" style="background:#F59E0B"></span>Testing</span>
+                <span class="cal-legend-item"><span class="cal-dot" style="background:#EF4444"></span>Security</span>
+                <span class="cal-legend-item"><span class="cal-dot" style="background:#64748B"></span>Documentatie</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Work Distribution -->
+          <section class="section">
+            <div class="section-heading">
+              <div class="section-num">03</div>
+              <h2 class="section-title">Hoe wordt mijn tijd verdeeld?</h2>
+            </div>
+            <div class="section-body">
+              <app-work-distribution [distributions]="vacancy()!.workDistribution" />
+            </div>
+          </section>
+
+          <!-- Skills -->
+          <section class="section">
+            <div class="section-heading">
+              <div class="section-num">04</div>
+              <h2 class="section-title">Welke competenties zijn vereist?</h2>
+            </div>
+            <div class="section-body">
+              <app-skills-section [skills]="vacancy()!.skills" />
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+} @else {
+  <div class="not-found">
+    <h2>Vacature niet gevonden</h2>
+    <a routerLink="/" class="back-link">Terug naar overzicht</a>
+  </div>
+}

@@ -10,6 +10,11 @@
     "locations": ["Den Haag"],
     "roleDescription": "Als Senior Software Developer draag je bij aan de ontwikkeling van kritieke defensiesoftware. Je bent verantwoordelijk voor het ontwerpen, bouwen en onderhouden van complexe applicaties die worden ingezet door operationele eenheden. Je werkt nauw samen met product owners, architecten en andere developers in een modern agile team.",
     "dailyActivities": "Je dag begint met een dagelijkse stand-up. Daarna werk je aan feature development, code reviews en technische documentatie. Je overlegt regelmatig met product owners over requirements en met architecten over technische oplossingen. Je draagt actief bij aan het technisch ontwerp en ondersteunt junior collega's.",
+    "contactPerson": {
+      "name": "Kapitein Mark de Vries",
+      "email": "m.devries@defensie.nl",
+      "phone": "070-316 4001"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "Sprint Planning", "startTime": "09:00", "endTime": "10:30", "description": "Wekelijkse sprint planning met het team" },
       { "day": "monday", "title": "Feature Development", "startTime": "10:30", "endTime": "17:00", "description": "Ontwikkeling van nieuwe features" },
@@ -53,6 +58,11 @@
     "locations": ["Breda", "Den Haag"],
     "roleDescription": "Als DevOps Engineer bij het Commando Landstrijdkrachten ben je verantwoordelijk voor het beheren en optimaliseren van de CI/CD pipelines en cloudinfrastructuur. Je zorgt ervoor dat software snel, veilig en betrouwbaar kan worden uitgerold naar productieomgevingen. Je werkt nauw samen met development- en securityteams.",
     "dailyActivities": "Je bewaakt de stabiliteit van de pipeline-infrastructuur, lost incidenten op en implementeert automatiseringsoplossingen. Je helpt developers met deployment vraagstukken en configureert monitoring. Je draagt bij aan de transitie naar cloud-native architecturen.",
+    "contactPerson": {
+      "name": "Luitenant Kim van den Berg",
+      "email": "k.vandenberg@defensie.nl",
+      "phone": "076-527 3002"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "Infra Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Status van systemen en openstaande incidenten" },
       { "day": "monday", "title": "Pipeline Onderhoud", "startTime": "09:00", "endTime": "12:00", "description": "Optimalisatie CI/CD pipelines" },
@@ -97,6 +107,11 @@
     "locations": ["Den Haag"],
     "roleDescription": "Als Cybersecurity Analyst bij het Defensie Cyber Commando analyseer en bewaak je de digitale veiligheid van defensiesystemen. Je detecteert dreigingen, voert vulnerability assessments uit en adviseert over beveiligingsmaatregelen. Je werkt in een operationeel Security Operations Center (SOC).",
     "dailyActivities": "Je analyseert SIEM-alerts en onderzoekt potentiële bedreigingen. Je voert regelmatig penetration tests en vulnerability scans uit. Je stelt dreigingsrapporten op voor het management en adviseert over beveiligingsbeleid. Je neemt deel aan threat intelligence-sessies.",
+    "contactPerson": {
+      "name": "Majoor Sandra Bakker",
+      "email": "s.bakker@defensie.nl",
+      "phone": "070-316 4003"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "SOC Briefing", "startTime": "08:00", "endTime": "09:00", "description": "Overdracht en status bekende dreigingen" },
       { "day": "monday", "title": "SIEM Analyse", "startTime": "09:00", "endTime": "12:00", "description": "Analyse van security alerts" },
@@ -141,6 +156,11 @@
     "locations": ["Apeldoorn"],
     "roleDescription": "Als Junior Software Developer maak je deel uit van een ervaren team dat werkt aan interne defensieapplicaties. Je leert het vak in de praktijk terwijl je bijdraagt aan echte projecten. Je wordt begeleid door senior developers en krijgt ruimte om te groeien.",
     "dailyActivities": "Je werkt aan bugfixes en kleinere features onder begeleiding van een senior developer. Je neemt deel aan code reviews om te leren van je collega's. Je volgt regelmatig technische trainingen en zelfstudie om je vaardigheden te ontwikkelen.",
+    "contactPerson": {
+      "name": "Adjudant Peter Smits",
+      "email": "p.smits@defensie.nl",
+      "phone": "055-526 4004"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
       { "day": "monday", "title": "Begeleide Ontwikkeling", "startTime": "09:30", "endTime": "12:00", "description": "Feature development met mentorbegeleiding" },
@@ -184,6 +204,11 @@
     "locations": ["Amsterdam", "Den Haag"],
     "roleDescription": "Als Data Analyst bij de Directie Financiën & Control verwerk en analyseer je grote datasets om waardevolle inzichten te genereren voor besluitvormers. Je werkt met financiële en operationele data om trends te identificeren, rapportages te maken en dashboards te ontwikkelen die stuurinformatie bieden.",
     "dailyActivities": "Je verwerkt dagelijks datafeeds, controleert datakwaliteit en bouwt analytische rapporten. Je overlegt met stakeholders over informatiebehoefte en vertaalt die naar concrete analyses. Je presenteert bevindingen aan management en adviseurs.",
+    "contactPerson": {
+      "name": "Drs. Laura van der Hoeven",
+      "email": "l.vanderhoeven@defensie.nl",
+      "phone": "020-702 5005"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "Data Intake", "startTime": "09:00", "endTime": "10:00", "description": "Verwerken van nieuwe datafeeds" },
       { "day": "monday", "title": "Dashboard Onderhoud", "startTime": "10:00", "endTime": "12:00", "description": "Bijwerken Power BI dashboards" },
@@ -225,6 +250,11 @@
     "locations": ["Utrecht"],
     "roleDescription": "Als Agile Coach begeleid je teams en organisaties in de transitie naar agile werken. Je coacht Scrum teams, faciliteert workshops en ondersteunt management bij de organisatieontwikkeling. Je bent een sparringpartner voor Product Owners en Team Leads en helpt obstakels weg te nemen.",
     "dailyActivities": "Je faciliteert standups, retrospectives en planningsessies. Je coacht individuen en teams in agile mindset en practices. Je geeft trainingen en workshops over Scrum, Kanban en Lean. Je adviseert management over agile transformatie.",
+    "contactPerson": {
+      "name": "Hr. Thomas Janssen",
+      "email": "t.janssen@defensie.nl",
+      "phone": "030-223 6006"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "Team A Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Faciliteren dagelijkse stand-up team A" },
       { "day": "monday", "title": "Team B Stand-up", "startTime": "10:00", "endTime": "10:30", "description": "Faciliteren dagelijkse stand-up team B" },
@@ -268,6 +298,11 @@
     "locations": ["Den Haag"],
     "roleDescription": "Als Solution Architect ontwerp je technische oplossingsarchitecturen voor complexe defensie-IT-projecten. Je vertaalt bedrijfsbehoeften naar robuuste, schaalbare en veilige technische architecturen. Je bent verantwoordelijk voor het bewaken van architectuurprincipes en het begeleiden van development teams bij de implementatie.",
     "dailyActivities": "Je stelt architectuurdocumenten op en presenteert die aan stakeholders. Je voert technische reviews uit op designs en implementaties. Je adviseert project- en programmamanagement over technische keuzes en risico's. Je werkt nauw samen met security architects en enterprise architecten.",
+    "contactPerson": {
+      "name": "Mevr. Anna van Dijk",
+      "email": "a.vandijk@defensie.nl",
+      "phone": "070-316 7007"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "Architecture Board", "startTime": "09:00", "endTime": "11:00", "description": "Wekelijks architectuuroverleg" },
       { "day": "monday", "title": "Design Review", "startTime": "11:00", "endTime": "13:00", "description": "Review van technische designs" },
@@ -310,6 +345,11 @@
     "locations": ["Den Haag", "Amsterdam"],
     "roleDescription": "Als Data Scientist bij de Directie Strategie & Kennis ontwikkel je geavanceerde machine learning-modellen en AI-toepassingen die strategische besluitvorming ondersteunen. Je analyseert complexe datasets, bouwt voorspellende modellen en vertaalt analytische inzichten naar concrete aanbevelingen voor beleidsmakers.",
     "dailyActivities": "Je werkt aan het bouwen en valideren van ML-modellen. Je voert exploratieve data-analyse uit op nieuwe datasets. Je overlegt met domeinexperts over de interpretatiedosier van modellen en vertaalt resultaten naar begrijpelijk inzicht. Je presenteert bevindingen aan senior management en beleidsadviseurs.",
+    "contactPerson": {
+      "name": "Dr. Pieter Bos",
+      "email": "p.bos@defensie.nl",
+      "phone": "070-316 8008"
+    },
     "weeklyCalendar": [
       { "day": "monday", "title": "Data Exploratie", "startTime": "09:00", "endTime": "12:00", "description": "Verkenning van nieuwe datasets" },
       { "day": "monday", "title": "Model Development", "startTime": "13:00", "endTime": "17:00", "description": "Bouwen ML-modellen in Python" },

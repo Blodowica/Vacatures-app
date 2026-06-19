@@ -1,0 +1,177 @@
+:host {
+  display: block;
+}
+
+/* Mobile backdrop */
+.backdrop {
+  position: fixed;
+  inset: 64px 0 0 0;
+  background: rgba(15, 35, 66, 0.4);
+  z-index: 149;
+  backdrop-filter: blur(2px);
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: calc(100vh - 64px);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fff;
+  border-right: 1px solid var(--border);
+  min-height: 100%;
+  position: sticky;
+  top: 64px;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-inner {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content */
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Results toolbar */
+.results-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 64px;
+  z-index: 10;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.results-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.results-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.filter-toggle {
+  display: none;
+  --mdc-text-button-label-text-color: var(--navy);
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  height: 36px;
+  gap: 2px;
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.filter-count-badge {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.results-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.625rem;
+}
+
+.results-title {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+
+.results-count {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+
+  strong {
+    color: var(--navy);
+    font-weight: 700;
+  }
+}
+
+.clear-filters-btn {
+  --mdc-text-button-label-text-color: #ef4444;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  height: 32px;
+
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.results-area {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+
+/* Tablet (768–1023px): narrower sidebar */
+@media (max-width: 1023px) {
+  .page {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+/* Mobile (<768px): sidebar is overlay */
+@media (max-width: 767px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 64px;
+    width: 300px;
+    height: calc(100vh - 64px);
+    z-index: 150;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.15);
+    transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.sidebar-open {
+      left: 0;
+    }
+  }
+
+  .filter-toggle {
+    display: flex;
+  }
+
+  .results-area {
+    padding: 1rem;
+  }
+}

@@ -10,7 +10,7 @@ export class FilterService {
   readonly personnelType = signal<PersonnelType | 'all'>('all');
   readonly rank = signal<string | null>(null);
   readonly scale = signal<string | null>(null);
-  readonly functionDomain = signal<string | null>(null);
+  readonly functionDomain = signal<string[]>([]);
   readonly locations = signal<string[]>([]);
   readonly searchQuery = signal<string>('');
 
@@ -25,8 +25,7 @@ export class FilterService {
 
   readonly sections = computed<GroupedSection[]>(() => {
     const filter = this.activeFilter();
-    const all = this.vacancyService.vacancies();
-    const filtered = this.applyFilters(all, filter);
+    const filtered = this.applyFilters(this.vacancyService.vacancies(), filter);
     return this.buildSections(filtered, filter);
   });
 
@@ -34,18 +33,34 @@ export class FilterService {
     this.sections().reduce((acc, s) => acc + s.groups.reduce((a, g) => a + g.vacancies.length, 0), 0)
   );
 
+  readonly activeFilterCount = computed(() => {
+    const f = this.activeFilter();
+    let count = 0;
+    if (f.personnelType !== 'all') count++;
+    if (f.rank) count++;
+    if (f.scale) count++;
+    count += f.functionDomain.length;
+    count += f.locations.length;
+    return count;
+  });
+
   setPersonnelType(type: PersonnelType | 'all'): void {
     this.personnelType.set(type);
     this.rank.set(null);
     this.scale.set(null);
   }
 
+  toggleDomain(domain: string): void {
+    const current = this.functionDomain();
+    this.functionDomain.set(
+      current.includes(domain) ? current.filter(d => d !== domain) : [...current, domain]
+    );
+  }
+
   toggleLocation(location: string): void {
     const current = this.locations();
-    const idx = current.indexOf(location);
-    this.locations.set(idx >= 0
-      ? current.filter(l => l !== location)
-      : [...current, location]
+    this.locations.set(
+      current.includes(location) ? current.filter(l => l !== location) : [...current, location]
     );
   }
 
@@ -53,7 +68,7 @@ export class FilterService {
     this.personnelType.set('all');
     this.rank.set(null);
     this.scale.set(null);
-    this.functionDomain.set(null);
+    this.functionDomain.set([]);
     this.locations.set([]);
     this.searchQuery.set('');
   }
@@ -63,13 +78,14 @@ export class FilterService {
       if (filter.personnelType !== 'all' && v.personnelType !== filter.personnelType) return false;
       if (filter.rank && v.rank !== filter.rank) return false;
       if (filter.scale && v.scale !== filter.scale) return false;
-      if (filter.functionDomain && v.functionDomain !== filter.functionDomain) return false;
+      if (filter.functionDomain.length > 0 && !filter.functionDomain.includes(v.functionDomain)) return false;
       if (filter.locations.length > 0 && !filter.locations.some(l => v.locations.includes(l))) return false;
       if (filter.searchQuery) {
         const q = filter.searchQuery.toLowerCase();
         if (!v.title.toLowerCase().includes(q) &&
             !v.department.toLowerCase().includes(q) &&
-            !v.functionDomain.toLowerCase().includes(q)) return false;
+            !v.functionDomain.toLowerCase().includes(q) &&
+            !v.locations.some(l => l.toLowerCase().includes(q))) return false;
       }
       return true;
     });
@@ -88,15 +104,12 @@ export class FilterService {
       }
       return sections;
     }
-
-    const groups = this.groupVacancies(vacancies, filter.personnelType as PersonnelType, filter);
-    return [{ sectionTitle: null, personnelType: filter.personnelType, groups }];
+    return [{ sectionTitle: null, personnelType: filter.personnelType, groups: this.groupVacancies(vacancies, filter.personnelType as PersonnelType, filter) }];
   }
 
   private groupVacancies(vacancies: Vacancy[], type: PersonnelType, filter: VacancyFilter): VacancyGroup[] {
     const getKey = (v: Vacancy): string => {
       if (filter.rank || filter.scale) return v.functionDomain;
-      if (filter.functionDomain) return type === 'military' ? (v.rank ?? 'Onbekend') : (v.scale ?? 'Onbekend');
       return type === 'military' ? (v.rank ?? 'Onbekend') : (v.scale ?? 'Onbekend');
     };
 
@@ -106,7 +119,6 @@ export class FilterService {
       if (!map.has(key)) map.set(key, []);
       map.get(key)!.push(v);
     }
-
     return Array.from(map.entries()).map(([label, vacs]) => ({ label, vacancies: vacs }));
   }
 }

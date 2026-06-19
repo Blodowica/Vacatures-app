@@ -1,0 +1,93 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0 0.875rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid var(--navy);
+}
+
+.section-indicator {
+  width: 4px;
+  height: 26px;
+  border-radius: 2px;
+}
+
+.section-header.military .section-indicator {
+  background: var(--amber);
+}
+
+.section-header.civilian .section-indicator {
+  background: var(--teal);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.section-count {
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 9999px;
+  margin-left: auto;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  gap: 0.875rem;
+}
+
+.empty-icon {
+  width: 72px;
+  height: 72px;
+  background: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    color: var(--text-muted);
+  }
+}
+
+.empty-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0.25rem 0 0;
+}
+
+.empty-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 320px;
+}
+
+.empty-reset {
+  --mdc-filled-button-container-color: var(--navy);
+  --mdc-filled-button-label-text-color: #fff;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+}

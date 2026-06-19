@@ -1,0 +1,28 @@
+@if (filterService.totalCount() === 0) {
+  <div class="empty-state" role="status">
+    <div class="empty-icon">
+      <mat-icon>search_off</mat-icon>
+    </div>
+    <h3 class="empty-title">Geen vacatures gevonden</h3>
+    <p class="empty-text">Pas je filters of zoekopdracht aan om meer resultaten te zien.</p>
+    <button mat-flat-button class="empty-reset" (click)="filterService.resetFilters()">
+      <mat-icon>refresh</mat-icon>
+      Alle filters wissen
+    </button>
+  </div>
+} @else {
+  <div class="list">
+    @for (section of filterService.sections(); track (section.personnelType + section.sectionTitle)) {
+      @if (section.sectionTitle) {
+        <div class="section-header" [class.military]="section.personnelType === 'military'" [class.civilian]="section.personnelType === 'civilian'">
+          <span class="section-indicator"></span>
+          <h2 class="section-title">{{ section.sectionTitle }}</h2>
+          <span class="section-count">{{ sectionCount(section) }}</span>
+        </div>
+      }
+      @for (group of section.groups; track group.label) {
+        <app-vacancy-group [group]="group" />
+      }
+    }
+  </div>
+}

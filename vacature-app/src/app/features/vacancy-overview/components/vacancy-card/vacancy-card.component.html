@@ -1,0 +1,48 @@
+<mat-card class="vcard" [routerLink]="['/vacatures', vacancy().id]" tabindex="0">
+  <mat-card-content class="vcard-content">
+    <div class="vcard-top">
+      <mat-chip-set class="chip-row" aria-label="Labels">
+        <mat-chip
+          class="chip-type"
+          [class.military]="vacancy().personnelType === 'military'"
+          [class.civilian]="vacancy().personnelType === 'civilian'"
+        >
+          <mat-icon matChipAvatar class="chip-icon">
+            {{ vacancy().personnelType === 'military' ? 'military_tech' : 'badge' }}
+          </mat-icon>
+          {{ vacancy().personnelType === 'military' ? 'Militair' : 'Burger' }}
+        </mat-chip>
+        <mat-chip class="chip-domain">{{ vacancy().functionDomain }}</mat-chip>
+      </mat-chip-set>
+      <div class="card-arrow">
+        <mat-icon>arrow_forward</mat-icon>
+      </div>
+    </div>
+
+    <h3 class="vcard-title">{{ vacancy().title }}</h3>
+    <p class="vcard-dept">{{ vacancy().department }}</p>
+
+    <div class="vcard-meta">
+      @if (vacancy().rank) {
+        <span class="meta-item">
+          <mat-icon class="meta-icon">military_tech</mat-icon>
+          {{ vacancy().rank }}
+        </span>
+      }
+      @if (vacancy().scale) {
+        <span class="meta-item">
+          <mat-icon class="meta-icon">payments</mat-icon>
+          {{ vacancy().scale }}
+        </span>
+      }
+      <span class="meta-item">
+        <mat-icon class="meta-icon">location_on</mat-icon>
+        {{ vacancy().locations.join(' · ') }}
+      </span>
+    </div>
+
+    <div class="vcard-footer">
+      <span class="view-cta">Bekijk rol</span>
+    </div>
+  </mat-card-content>
+</mat-card>

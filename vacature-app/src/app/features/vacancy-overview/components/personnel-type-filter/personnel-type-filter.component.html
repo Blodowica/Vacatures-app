@@ -1,0 +1,11 @@
+<mat-button-toggle-group
+  class="type-group"
+  [value]="filterService.personnelType()"
+  (change)="onChange($event)"
+  aria-label="Personeelstype"
+  hideSingleSelectionIndicator
+>
+  @for (opt of options; track opt.value) {
+    <mat-button-toggle [value]="opt.value">{{ opt.label }}</mat-button-toggle>
+  }
+</mat-button-toggle-group>

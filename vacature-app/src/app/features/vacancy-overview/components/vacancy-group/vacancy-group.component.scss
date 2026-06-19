@@ -1,0 +1,51 @@
+.group {
+  margin-bottom: 2rem;
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.group-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.group-bar {
+  width: 3px;
+  height: 22px;
+  background: var(--amber);
+  border-radius: 2px;
+}
+
+.group-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+
+.count-chip {
+  --mdc-chip-elevated-container-color: var(--navy);
+  --mdc-chip-label-text-color: #fff;
+  --mdc-chip-label-text-size: 0.75rem;
+  --mdc-chip-container-height: 22px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 0.875rem;
+}
+
+@media (max-width: 480px) {
+  .group-grid {
+    grid-template-columns: 1fr;
+  }
+}

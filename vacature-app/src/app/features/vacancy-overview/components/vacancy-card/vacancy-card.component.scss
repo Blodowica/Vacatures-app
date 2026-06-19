@@ -1,0 +1,134 @@
+.vcard {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 12px !important;
+  transition: box-shadow 0.2s ease, transform 0.15s ease, border-color 0.2s;
+  --mat-card-elevated-container-elevation: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+  outline: none;
+  text-decoration: none;
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 8px 24px rgba(15, 35, 66, 0.12) !important;
+    transform: translateY(-2px);
+    border-color: #94a3b8;
+
+    .card-arrow {
+      color: var(--navy);
+      transform: translateX(3px);
+
+      mat-icon {
+        color: var(--amber);
+      }
+    }
+
+    .view-cta {
+      color: var(--amber);
+    }
+  }
+}
+
+.vcard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.125rem !important;
+}
+
+.vcard-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.chip-type {
+  --mdc-chip-label-text-size: 0.75rem;
+  --mdc-chip-container-height: 24px;
+  font-weight: 600;
+
+  &.military {
+    --mdc-chip-elevated-container-color: #fef3c7;
+    --mdc-chip-label-text-color: #92400e;
+  }
+
+  &.civilian {
+    --mdc-chip-elevated-container-color: #ccfbf1;
+    --mdc-chip-label-text-color: #0f766e;
+  }
+}
+
+.chip-domain {
+  --mdc-chip-elevated-container-color: #ede9fe;
+  --mdc-chip-label-text-color: #5b21b6;
+  --mdc-chip-label-text-size: 0.75rem;
+  --mdc-chip-container-height: 24px;
+}
+
+.chip-icon {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+}
+
+.card-arrow {
+  color: var(--text-muted);
+  transition: color 0.15s, transform 0.15s;
+  flex-shrink: 0;
+}
+
+.vcard-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0.25rem 0 0;
+  line-height: 1.3;
+}
+
+.vcard-dept {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.vcard-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.meta-icon {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  color: var(--text-muted);
+}
+
+.vcard-footer {
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.view-cta {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--navy);
+  transition: color 0.15s;
+}

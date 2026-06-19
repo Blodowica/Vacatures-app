@@ -1,0 +1,16 @@
+<section class="group">
+  <div class="group-header">
+    <div class="group-heading">
+      <span class="group-bar"></span>
+      <h3 class="group-label">{{ group().label }}</h3>
+    </div>
+    <mat-chip class="count-chip" [attr.aria-label]="group().vacancies.length + ' vacatures'">
+      {{ group().vacancies.length }}
+    </mat-chip>
+  </div>
+  <div class="group-grid">
+    @for (vacancy of group().vacancies; track vacancy.id) {
+      <app-vacancy-card [vacancy]="vacancy" />
+    }
+  </div>
+</section>

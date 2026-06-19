@@ -4,7 +4,7 @@ export interface VacancyFilter {
   personnelType: PersonnelType | 'all';
   rank: string | null;
   scale: string | null;
-  functionDomain: string | null;
+  functionDomain: string[];
   locations: string[];
   searchQuery: string;
 }
