@@ -1,7 +1,7 @@
 import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
-import { MatIconButton, MatButton } from '@angular/material/button';
+import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuTrigger, MatMenuItem } from '@angular/material/menu';
 import { MatDivider } from '@angular/material/divider';
@@ -13,7 +13,7 @@ import { AuthService } from '../../core/auth/auth.service';
   standalone: true,
   imports: [
     RouterLink,
-    MatToolbar, MatIconButton, MatButton, MatIcon,
+    MatToolbar, MatButton, MatIcon,
     MatMenu, MatMenuTrigger, MatMenuItem, MatDivider,
     SearchBarComponent,
   ],

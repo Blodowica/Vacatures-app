@@ -1,4 +1,4 @@
-import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { Component, inject, signal, ChangeDetectionStrategy } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { FilterService } from '../../../../core/services/filter.service';
@@ -14,8 +14,20 @@ import { VacancyGroupComponent } from '../vacancy-group/vacancy-group.component'
 })
 export class VacancyListComponent {
   readonly filterService = inject(FilterService);
+  readonly collapsedSections = signal<string[]>([]);
 
   sectionCount(section: { groups: { vacancies: unknown[] }[] }): number {
     return section.groups.reduce((acc, g) => acc + g.vacancies.length, 0);
+  }
+
+  isCollapsed(title: string): boolean {
+    return this.collapsedSections().includes(title);
+  }
+
+  toggleSection(title: string): void {
+    const current = this.collapsedSections();
+    this.collapsedSections.set(
+      current.includes(title) ? current.filter(s => s !== title) : [...current, title]
+    );
   }
 }

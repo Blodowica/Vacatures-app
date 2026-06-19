@@ -64,6 +64,10 @@
           <!-- Right: contact card -->
           <div class="hero-right">
             <app-contact-section [contactPerson]="vacancy()!.contactPerson" theme="dark" />
+            <a [href]="mailtoLink()" class="solliciteer-btn" target="_blank" rel="noopener">
+              <mat-icon>send</mat-icon>
+              Solliciteer
+            </a>
           </div>
 
         </div>
@@ -75,63 +79,73 @@
       <div class="inner">
         <div class="sections">
 
-          <!-- What do I do -->
-          <section class="section">
-            <div class="section-heading">
-              <div class="section-num">01</div>
-              <h2 class="section-title">Wat doe ik?</h2>
-            </div>
-            <div class="section-body">
-              <div class="prose-block">
-                <h3 class="prose-title">Over de rol</h3>
-                <p class="prose-text">{{ vacancy()!.roleDescription }}</p>
-              </div>
-              <div class="prose-block">
-                <h3 class="prose-title">Dagelijkse activiteiten</h3>
-                <p class="prose-text">{{ vacancy()!.dailyActivities }}</p>
-              </div>
-            </div>
-          </section>
+          <!-- Top row: Wat doe ik + Competenties side by side (equal height) -->
+          <div class="top-row">
 
-          <!-- Weekly Calendar -->
-          <section class="section">
-            <div class="section-heading">
-              <div class="section-num">02</div>
-              <h2 class="section-title">Hoe ziet mijn week eruit?</h2>
-            </div>
-            <div class="section-body">
-              <app-weekly-calendar [activities]="vacancy()!.weeklyCalendar" />
-              <div class="calendar-legend">
-                <span class="cal-legend-item"><span class="cal-dot" style="background:#3B82F6"></span>Overleg</span>
-                <span class="cal-legend-item"><span class="cal-dot" style="background:#10B981"></span>Ontwikkeling</span>
-                <span class="cal-legend-item"><span class="cal-dot" style="background:#F59E0B"></span>Testing</span>
-                <span class="cal-legend-item"><span class="cal-dot" style="background:#EF4444"></span>Security</span>
-                <span class="cal-legend-item"><span class="cal-dot" style="background:#64748B"></span>Documentatie</span>
+            <!-- What do I do -->
+            <section class="section section-what">
+              <div class="section-heading">
+                <div class="section-icon"><mat-icon>work_outline</mat-icon></div>
+                <h2 class="section-title">Wat doe ik?</h2>
               </div>
-            </div>
-          </section>
+              <div class="section-body">
+                <div class="prose-block">
+                  <h3 class="prose-title">Over de rol</h3>
+                  <p class="prose-text">{{ vacancy()!.roleDescription }}</p>
+                </div>
+                <div class="prose-block">
+                  <h3 class="prose-title">Dagelijkse activiteiten</h3>
+                  <p class="prose-text">{{ vacancy()!.dailyActivities }}</p>
+                </div>
+              </div>
+            </section>
 
-          <!-- Work Distribution -->
-          <section class="section">
-            <div class="section-heading">
-              <div class="section-num">03</div>
-              <h2 class="section-title">Hoe wordt mijn tijd verdeeld?</h2>
-            </div>
-            <div class="section-body">
-              <app-work-distribution [distributions]="vacancy()!.workDistribution" />
-            </div>
-          </section>
+            <!-- Skills (compact, beside Wat doe ik, same height) -->
+            <section class="section section-skills">
+              <div class="section-heading">
+                <div class="section-icon"><mat-icon>psychology</mat-icon></div>
+                <h2 class="section-title">Competenties</h2>
+              </div>
+              <div class="section-body">
+                <app-skills-section [skills]="vacancy()!.skills" />
+              </div>
+            </section>
 
-          <!-- Skills -->
-          <section class="section">
-            <div class="section-heading">
-              <div class="section-num">04</div>
-              <h2 class="section-title">Welke competenties zijn vereist?</h2>
-            </div>
-            <div class="section-body">
-              <app-skills-section [skills]="vacancy()!.skills" />
-            </div>
-          </section>
+          </div>
+
+          <!-- Week row: calendar + distribution side by side -->
+          <div class="week-row">
+
+            <!-- Weekly Calendar -->
+            <section class="section section-week">
+              <div class="section-heading">
+                <div class="section-icon"><mat-icon>calendar_today</mat-icon></div>
+                <h2 class="section-title">Hoe ziet mijn week eruit?</h2>
+              </div>
+              <div class="section-body">
+                <app-weekly-calendar [activities]="vacancy()!.weeklyCalendar" />
+                <div class="calendar-legend">
+                  <span class="cal-legend-item"><span class="cal-dot" style="background:#3B82F6"></span>Overleg</span>
+                  <span class="cal-legend-item"><span class="cal-dot" style="background:#10B981"></span>Ontwikkeling</span>
+                  <span class="cal-legend-item"><span class="cal-dot" style="background:#F59E0B"></span>Testing</span>
+                  <span class="cal-legend-item"><span class="cal-dot" style="background:#EF4444"></span>Security</span>
+                  <span class="cal-legend-item"><span class="cal-dot" style="background:#64748B"></span>Documentatie</span>
+                </div>
+              </div>
+            </section>
+
+            <!-- Work Distribution (compact sidebar) -->
+            <section class="section section-dist">
+              <div class="section-heading">
+                <div class="section-icon"><mat-icon>donut_large</mat-icon></div>
+                <h2 class="section-title">Tijdverdeling</h2>
+              </div>
+              <div class="section-body">
+                <app-work-distribution [distributions]="vacancy()!.workDistribution" />
+              </div>
+            </section>
+
+          </div>
 
         </div>
       </div>

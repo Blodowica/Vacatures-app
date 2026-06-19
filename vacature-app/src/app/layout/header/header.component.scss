@@ -122,6 +122,26 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.login-btn {
+  background: var(--amber);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  border-radius: 8px;
+  height: 36px;
+  gap: 0.25rem;
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background: #fbbf24;
+  }
+}
+
 .menu-header {
   display: flex;
   align-items: center;

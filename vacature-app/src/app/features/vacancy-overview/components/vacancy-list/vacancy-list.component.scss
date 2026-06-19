@@ -8,8 +8,24 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 0 0.875rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   border-bottom: 2px solid var(--navy);
+  width: 100%;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  text-align: left;
+
+  &:hover .section-title {
+    color: #1e3a5f;
+  }
+}
+
+.section-groups {
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .section-indicator {
@@ -42,6 +58,19 @@
   padding: 0.15rem 0.6rem;
   border-radius: 9999px;
   margin-left: auto;
+}
+
+.collapse-icon {
+  color: var(--navy);
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+
+  &.rotated {
+    transform: rotate(180deg);
+  }
 }
 
 .empty-state {

@@ -3,7 +3,7 @@
 }
 
 .inner {
-  max-width: 900px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -51,6 +51,40 @@
   padding-top: 0.25rem;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.solliciteer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  background: #f59e0b;
+  color: #0f2342;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: background 0.15s, transform 0.1s;
+  width: 100%;
+
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    background: #fbbf24;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
 }
 
 .hero-meta {
@@ -112,9 +146,86 @@
 .sections {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
+/* ── Top row: Wat doe ik (flex) + Competenties (fixed) ── */
+.top-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.section-what {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-skills {
+  flex-shrink: 0;
+  width: 290px;
+
+  .section-body {
+    padding: 1rem;
+    gap: 0.625rem;
+  }
+
+  .section-heading {
+    padding: 0.875rem 1rem;
+  }
+}
+
+/* ── Week row: calendar (flex) + distribution (fixed compact) ── */
+.week-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.section-week {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-dist {
+  flex-shrink: 0;
+  width: 280px;
+
+  .section-heading {
+    padding: 0.875rem 1rem;
+  }
+
+  .section-body {
+    padding: 1rem;
+  }
+
+  ::ng-deep .distribution {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  ::ng-deep .chart-wrap {
+    width: 140px;
+    height: 140px;
+  }
+
+  ::ng-deep .legend {
+    min-width: 0;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  ::ng-deep .legend-name {
+    font-size: 0.8125rem;
+  }
+
+  ::ng-deep .legend-pct {
+    font-size: 0.8125rem;
+  }
+}
+
+/* ── Shared section styles ── */
 .section {
   background: #fff;
   border-radius: 16px;
@@ -126,24 +237,32 @@
 .section-heading {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1.25rem 1.5rem;
+  gap: 0.875rem;
+  padding: 1.125rem 1.5rem;
   border-bottom: 1px solid #f1f5f9;
   background: #fafbfc;
 }
 
-.section-num {
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: #f59e0b;
+.section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
   background: #fef3c7;
-  border-radius: 6px;
-  padding: 0.2rem 0.5rem;
-  letter-spacing: 0.05em;
+  border-radius: 8px;
+  flex-shrink: 0;
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    color: #f59e0b;
+  }
 }
 
 .section-title {
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   font-weight: 800;
   color: #0f2342;
   margin: 0;
@@ -204,6 +323,16 @@
   color: #64748b;
 }
 
+@media (max-width: 900px) {
+  .week-row {
+    flex-direction: column;
+  }
+
+  .section-dist {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-inner {
     flex-direction: column;
@@ -216,6 +345,18 @@
     padding-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 1.5rem;
+  }
+
+  .solliciteer-btn {
+    width: 100%;
+  }
+
+  .top-row {
+    flex-direction: column;
+  }
+
+  .section-skills {
+    width: 100%;
   }
 }
 

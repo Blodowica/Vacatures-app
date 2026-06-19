@@ -14,14 +14,29 @@
   <div class="list">
     @for (section of filterService.sections(); track (section.personnelType + section.sectionTitle)) {
       @if (section.sectionTitle) {
-        <div class="section-header" [class.military]="section.personnelType === 'military'" [class.civilian]="section.personnelType === 'civilian'">
+        <button
+          class="section-header"
+          [class.military]="section.personnelType === 'military'"
+          [class.civilian]="section.personnelType === 'civilian'"
+          (click)="toggleSection(section.sectionTitle)"
+          [attr.aria-expanded]="!isCollapsed(section.sectionTitle)"
+        >
           <span class="section-indicator"></span>
           <h2 class="section-title">{{ section.sectionTitle }}</h2>
           <span class="section-count">{{ sectionCount(section) }}</span>
-        </div>
-      }
-      @for (group of section.groups; track group.label) {
-        <app-vacancy-group [group]="group" />
+          <mat-icon class="collapse-icon" [class.rotated]="isCollapsed(section.sectionTitle)">keyboard_arrow_up</mat-icon>
+        </button>
+        @if (!isCollapsed(section.sectionTitle)) {
+          <div class="section-groups">
+            @for (group of section.groups; track group.label) {
+              <app-vacancy-group [group]="group" />
+            }
+          </div>
+        }
+      } @else {
+        @for (group of section.groups; track group.label) {
+          <app-vacancy-group [group]="group" />
+        }
       }
     }
   </div>

@@ -335,6 +335,333 @@
     ]
   },
   {
+    "id": "9",
+    "title": "Netwerk Engineer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Sergeant",
+    "scale": null,
+    "functionDomain": "DevOps",
+    "locations": ["Rotterdam", "Den Haag"],
+    "roleDescription": "Als Netwerk Engineer ontwerp en beheer je de netwerk­infrastructuur van defensie­systemen. Je bent verantwoordelijk voor het ontwerpen, implementeren en bewaken van robuuste, veilige en hoogbeschikbare netwerken. Je werkt nauw samen met security- en infrastructuurteams.",
+    "dailyActivities": "Je bewaakt de netwerkgezondheid via monitoring­dashboards, lost storingen op en implementeert netwerk­verbeteringen. Je voert wijzigingen door in routerconfiguratties en firewallregels en ondersteunt andere teams bij connectiviteitsvraagstukken.",
+    "contactPerson": {
+      "name": "Luitenant-Kolonel Jan Hoekstra",
+      "email": "j.hoekstra@defensie.nl",
+      "phone": "010-219 9001"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Netwerk Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Status netwerk en openstaande tickets" },
+      { "day": "monday", "title": "Infrastructuur Onderhoud", "startTime": "09:00", "endTime": "12:00", "description": "Onderhoud switches en routers" },
+      { "day": "monday", "title": "Configuratie Wijzigingen", "startTime": "13:00", "endTime": "17:00", "description": "Doorvoeren netwerk wijzigingen" },
+      { "day": "tuesday", "title": "Netwerk Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Monitoring & Analyse", "startTime": "09:00", "endTime": "12:00", "description": "Analyse van netwerkprestaties" },
+      { "day": "tuesday", "title": "Firewall Beheer", "startTime": "13:00", "endTime": "17:00", "description": "Beheer en tuning van firewallregels" },
+      { "day": "wednesday", "title": "Netwerk Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "VPN & Connectiviteit", "startTime": "09:00", "endTime": "12:00", "description": "Beheer VPN-tunnels en remote access" },
+      { "day": "wednesday", "title": "Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "Bijwerken netwerktekeningen en runbooks" },
+      { "day": "thursday", "title": "Netwerk Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Security Scan", "startTime": "09:00", "endTime": "11:00", "description": "Scan van netwerk kwetsbaarheden" },
+      { "day": "thursday", "title": "Capaciteitsplanning", "startTime": "13:00", "endTime": "17:00", "description": "Analyse bandbreedte en groeiprognoses" },
+      { "day": "friday", "title": "Netwerk Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Weekrapportage", "startTime": "09:00", "endTime": "11:00", "description": "Opstellen wekelijkse statusrapportage" },
+      { "day": "friday", "title": "Kennissessie", "startTime": "14:00", "endTime": "16:00", "description": "Teamkennis­deling en innovaties" }
+    ],
+    "workDistribution": [
+      { "category": "Netwerk Beheer", "percentage": 35 },
+      { "category": "Monitoring & Incidenten", "percentage": 25 },
+      { "category": "Security & Compliance", "percentage": 20 },
+      { "category": "Documentatie", "percentage": 12 },
+      { "category": "Overleg", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Cisco / Juniper", "level": 4, "description": "Routing en switching configuratie" },
+      { "skillName": "Firewall (Palo Alto, Fortinet)", "level": 4, "description": "Firewallbeheer en -beleid" },
+      { "skillName": "VPN & Tunneling", "level": 3, "description": "IPSec, SSL-VPN configuratie" },
+      { "skillName": "Netwerk Monitoring (Zabbix)", "level": 4, "description": "Bewaking en alerting" },
+      { "skillName": "Linux / Bash", "level": 3, "description": "Scripting en automatisering" }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Frontend Developer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Korporaal",
+    "scale": null,
+    "functionDomain": "Software Development",
+    "locations": ["Utrecht"],
+    "roleDescription": "Als Frontend Developer bij de Defensie ICT Organisatie bouw je gebruiksvriendelijke webapplicaties voor interne en operationele gebruikers. Je werkt nauw samen met UX-designers, backend developers en product owners om schaalbare en toegankelijke interfaces te realiseren.",
+    "dailyActivities": "Je implementeert UI-componenten op basis van designs, voert code reviews uit en werkt nauw samen met backend­developers aan API-integraties. Je draagt bij aan de componentenbibliotheek en het design­systeem van de organisatie.",
+    "contactPerson": {
+      "name": "Korporaal Sanne de Boer",
+      "email": "s.deboer@defensie.nl",
+      "phone": "030-299 2010"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Sprint Planning", "startTime": "09:00", "endTime": "10:30", "description": "Planning van de sprint taken" },
+      { "day": "monday", "title": "UI Ontwikkeling", "startTime": "10:30", "endTime": "17:00", "description": "Bouwen van nieuwe componenten" },
+      { "day": "tuesday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Design Review", "startTime": "10:00", "endTime": "11:30", "description": "Afstemming met UX-designers" },
+      { "day": "tuesday", "title": "Component Ontwikkeling", "startTime": "13:00", "endTime": "17:00", "description": "Implementatie UI-componenten" },
+      { "day": "wednesday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "API Integratie", "startTime": "09:30", "endTime": "12:00", "description": "Koppeling met backend services" },
+      { "day": "wednesday", "title": "UI Testen", "startTime": "13:00", "endTime": "17:00", "description": "Handmatig en geautomatiseerd testen" },
+      { "day": "thursday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Code Review", "startTime": "09:30", "endTime": "11:00", "description": "Review van pull requests" },
+      { "day": "thursday", "title": "Feature Afronding", "startTime": "11:00", "endTime": "17:00", "description": "Afronden en testen van features" },
+      { "day": "friday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "15:30", "description": "Presentatie sprint resultaten" },
+      { "day": "friday", "title": "Retrospective", "startTime": "15:30", "endTime": "16:30", "description": "Team retrospective" }
+    ],
+    "workDistribution": [
+      { "category": "Component Ontwikkeling", "percentage": 45 },
+      { "category": "Code Reviews", "percentage": 15 },
+      { "category": "Testing", "percentage": 20 },
+      { "category": "Overleg & Afstemming", "percentage": 12 },
+      { "category": "Documentatie", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Angular / TypeScript", "level": 3, "description": "Frontend framework en typing" },
+      { "skillName": "HTML / CSS / SCSS", "level": 4, "description": "Moderne webstandaarden" },
+      { "skillName": "RxJS", "level": 3, "description": "Reactief programmeren" },
+      { "skillName": "Figma / UX Design", "level": 2, "description": "Werken met design­bestanden" },
+      { "skillName": "Git & CI/CD", "level": 3, "description": "Versiebeheer en pipelines" }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "IT Projectmanager",
+    "department": "Defensie Cyber Commando",
+    "personnelType": "military",
+    "rank": "Adjudant",
+    "scale": null,
+    "functionDomain": "Architecture",
+    "locations": ["Den Haag", "Utrecht"],
+    "roleDescription": "Als IT Projectmanager bij het Defensie Cyber Commando begeleid je complexe IT-projecten van initiatie tot oplevering. Je coördineert multidisciplinaire teams, bewaakt de planning en het budget en rapporteert aan stakeholders en opdrachtgevers. Je zorgt voor aansluiting bij de defensie-architectuurprincipes.",
+    "dailyActivities": "Je coördineert dagelijks de voortgang van meerdere workstreams, lost escalaties op en bewaakt risico's en afhankelijkheden. Je voert stakeholder­gesprekken en stelt voortgangsrapportages op. Je faciliteert overleggen en stuurt stuurgroepbesluiten aan.",
+    "contactPerson": {
+      "name": "Majoor Roel van der Linden",
+      "email": "r.vanderlinden@defensie.nl",
+      "phone": "070-316 4011"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Project Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Voortgang alle workstreams" },
+      { "day": "monday", "title": "Stakeholder Overleg", "startTime": "10:00", "endTime": "12:00", "description": "Afstemming met opdrachtgever" },
+      { "day": "monday", "title": "Planning Bijwerken", "startTime": "13:00", "endTime": "15:00", "description": "Aanpassen project­planning" },
+      { "day": "tuesday", "title": "Project Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Risico Analyse", "startTime": "10:00", "endTime": "12:00", "description": "Beoordeling project­risico's" },
+      { "day": "tuesday", "title": "Voortgangs­rapportage", "startTime": "13:00", "endTime": "16:00", "description": "Opstellen rapportage voor stuurgroep" },
+      { "day": "wednesday", "title": "Project Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "Team Begeleiding", "startTime": "09:30", "endTime": "12:00", "description": "Coaching en aansturing team" },
+      { "day": "wednesday", "title": "Budget Bewaking", "startTime": "13:00", "endTime": "15:00", "description": "Review projectbudget en prognoses" },
+      { "day": "thursday", "title": "Stuurgroep", "startTime": "10:00", "endTime": "12:00", "description": "Presentatie aan stuurgroep" },
+      { "day": "thursday", "title": "Change Management", "startTime": "13:00", "endTime": "17:00", "description": "Verwerken wijzigingsverzoeken" },
+      { "day": "friday", "title": "Project Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Weekreview & Documentatie", "startTime": "10:00", "endTime": "12:00", "description": "Wekelijkse terugblik en archivering" }
+    ],
+    "workDistribution": [
+      { "category": "Planning & Coördinatie", "percentage": 35 },
+      { "category": "Stakeholder­management", "percentage": 25 },
+      { "category": "Rapportage", "percentage": 20 },
+      { "category": "Risico­management", "percentage": 12 },
+      { "category": "Team Begeleiding", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Projectmanagement (Prince2)", "level": 5, "description": "Methodische project­sturing" },
+      { "skillName": "Stakeholder­management", "level": 4, "description": "Communicatie op alle niveaus" },
+      { "skillName": "Risicomanagement", "level": 4, "description": "Identificatie en mitigatie van risico's" },
+      { "skillName": "MS Project / Jira", "level": 4, "description": "Planning­tools en voortgangs­bewaking" },
+      { "skillName": "Conflictmanagement", "level": 3, "description": "Escalaties hanteren en oplossen" }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Applicatiebeheerder",
+    "department": "Commando Landstrijdkrachten",
+    "personnelType": "military",
+    "rank": "Soldaat 1e Klasse",
+    "scale": null,
+    "functionDomain": "DevOps",
+    "locations": ["Breda"],
+    "roleDescription": "Als Applicatiebeheerder zorg je voor de beschikbaarheid, prestaties en beveiliging van operationele defensie­applicaties. Je lost incidenten op, voert updates uit en ondersteunt eindgebruikers. Je werkt nauw samen met ontwikkelaars en infrastructuur­specialisten.",
+    "dailyActivities": "Je beheert en monitort dagelijks de applicatie­omgevingen, lost gemelde storingen op en verwerkt wijzigings­verzoeken. Je voert periodieke onderhouds­werkzaamheden uit en documenteert acties in het ITSM-systeem.",
+    "contactPerson": {
+      "name": "Sergeant Lisa Vermeer",
+      "email": "l.vermeer@defensie.nl",
+      "phone": "076-527 3012"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Applicatie Check", "startTime": "08:00", "endTime": "09:00", "description": "Dagelijkse health check van applicaties" },
+      { "day": "monday", "title": "Incident Afhandeling", "startTime": "09:00", "endTime": "12:00", "description": "Oplossen gerapporteerde incidenten" },
+      { "day": "monday", "title": "Onderhoud & Patches", "startTime": "13:00", "endTime": "17:00", "description": "Installeren updates en patches" },
+      { "day": "tuesday", "title": "Applicatie Check", "startTime": "08:00", "endTime": "09:00", "description": "Health check" },
+      { "day": "tuesday", "title": "Gebruikers­ondersteuning", "startTime": "09:00", "endTime": "12:00", "description": "Helpen van eindgebruikers" },
+      { "day": "tuesday", "title": "Change Verwerking", "startTime": "13:00", "endTime": "17:00", "description": "Uitvoeren approved changes" },
+      { "day": "wednesday", "title": "Applicatie Check", "startTime": "08:00", "endTime": "09:00", "description": "Health check" },
+      { "day": "wednesday", "title": "Documentatie Bijwerken", "startTime": "09:00", "endTime": "12:00", "description": "Actualiseren beheer­documentatie" },
+      { "day": "wednesday", "title": "Test Uitvoering", "startTime": "13:00", "endTime": "17:00", "description": "Testen van patches in acceptatie" },
+      { "day": "thursday", "title": "Applicatie Check", "startTime": "08:00", "endTime": "09:00", "description": "Health check" },
+      { "day": "thursday", "title": "Overleg Ontwikkelaars", "startTime": "10:00", "endTime": "12:00", "description": "Afstemming met ontwikkelteam" },
+      { "day": "thursday", "title": "Incident Analyse", "startTime": "13:00", "endTime": "17:00", "description": "Root cause analyse recente incidenten" },
+      { "day": "friday", "title": "Applicatie Check", "startTime": "08:00", "endTime": "09:00", "description": "Health check" },
+      { "day": "friday", "title": "Weekrapportage", "startTime": "09:00", "endTime": "11:00", "description": "Opstellen wekelijkse beheer­rapportage" }
+    ],
+    "workDistribution": [
+      { "category": "Incident­beheer", "percentage": 35 },
+      { "category": "Onderhoud & Patches", "percentage": 25 },
+      { "category": "Gebruikers­ondersteuning", "percentage": 20 },
+      { "category": "Documentatie", "percentage": 12 },
+      { "category": "Change Verwerking", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "ITSM (ServiceNow/TOPdesk)", "level": 3, "description": "Incident en change management" },
+      { "skillName": "Windows Server / Active Directory", "level": 3, "description": "Serverbeheeer en gebruikers­beheer" },
+      { "skillName": "SQL Basis", "level": 2, "description": "Eenvoudige database queries" },
+      { "skillName": "Scripting (PowerShell)", "level": 2, "description": "Automatisering beheertaken" },
+      { "skillName": "ITIL Fundament", "level": 3, "description": "IT-service management principes" }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Junior DevOps Engineer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 9",
+    "functionDomain": "DevOps",
+    "locations": ["Den Haag", "Utrecht"],
+    "roleDescription": "Als Junior DevOps Engineer werk je aan de automatisering en verbetering van de software­levering­processen. Onder begeleiding van senior engineers leer je CI/CD-pipelines bouwen, infrastructuur als code schrijven en monitoring­oplossingen implementeren. Je draagt bij aan een hogere release­frequentie en lagere uitval.",
+    "dailyActivities": "Je helpt bij het bouwen en onderhouden van pipelines, onderzoekt incidenten en schrijft scripting­oplossingen voor repetitieve taken. Je neemt deel aan team­overleggen en volgt interne trainingen om je snel te ontwikkelen.",
+    "contactPerson": {
+      "name": "Dhr. Kevin Prins",
+      "email": "k.prins@defensie.nl",
+      "phone": "070-316 4013"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "monday", "title": "Pipeline Ondersteuning", "startTime": "09:30", "endTime": "12:00", "description": "Assisteren senior engineers" },
+      { "day": "monday", "title": "Zelfstudie", "startTime": "13:00", "endTime": "17:00", "description": "DevOps trainingen en certificeringen" },
+      { "day": "tuesday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Scripting Taken", "startTime": "09:30", "endTime": "12:00", "description": "Bash / Python automatiserings­scripts" },
+      { "day": "tuesday", "title": "Monitoring Inrichting", "startTime": "13:00", "endTime": "17:00", "description": "Instellen dashboards en alerts" },
+      { "day": "wednesday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "CI/CD Ontwikkeling", "startTime": "09:30", "endTime": "17:00", "description": "Bouwen van pipeline­stappen" },
+      { "day": "thursday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Incident Analyse", "startTime": "10:00", "endTime": "12:00", "description": "Meewerken aan incidenten" },
+      { "day": "thursday", "title": "Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "Schrijven runbooks en handleidingen" },
+      { "day": "friday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Sprint Review & Retro", "startTime": "14:00", "endTime": "16:30", "description": "Sprint afsluiting" }
+    ],
+    "workDistribution": [
+      { "category": "Pipeline & Automatisering", "percentage": 35 },
+      { "category": "Zelfstudie & Training", "percentage": 25 },
+      { "category": "Monitoring", "percentage": 20 },
+      { "category": "Documentatie", "percentage": 12 },
+      { "category": "Overleg", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Linux / Bash", "level": 2, "description": "Basiskennis shell scripting" },
+      { "skillName": "Docker", "level": 2, "description": "Containerisatie basis" },
+      { "skillName": "GitLab CI / GitHub Actions", "level": 2, "description": "Eenvoudige pipeline configuratie" },
+      { "skillName": "Python Scripting", "level": 2, "description": "Automatiserings­scripts" },
+      { "skillName": "Monitoring (Grafana)", "level": 2, "description": "Dashboard­inrichting" }
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Scrum Master",
+    "department": "Personeel & Organisatie",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 10",
+    "functionDomain": "Agile",
+    "locations": ["Amsterdam", "Utrecht"],
+    "roleDescription": "Als Scrum Master faciliteer je Scrum-processen voor één of meerdere development teams. Je verwijdert impedimenten, coacht het team in agile werken en werkt nauw samen met de Product Owner aan een gezonde backlog en effectieve ceremonies. Je draagt bij aan een hoge team­output en continue verbetering.",
+    "dailyActivities": "Je faciliteert dagelijkse stand-ups, sprint­planningen en retrospectives. Je coacht teamleden in agile denken, volgt de voortgang van sprint­taken en escaleert blokkades. Je werkt nauw samen met de Product Owner en management.",
+    "contactPerson": {
+      "name": "Mevr. Fleur de Graaf",
+      "email": "f.degraaf@defensie.nl",
+      "phone": "020-702 5014"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Faciliteren van de daily" },
+      { "day": "monday", "title": "Backlog Refinement", "startTime": "10:00", "endTime": "12:00", "description": "Verfijnen van user stories" },
+      { "day": "monday", "title": "1-op-1 Coaching", "startTime": "13:00", "endTime": "15:00", "description": "Individuele coachings­gesprekken" },
+      { "day": "tuesday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Faciliteren van de daily" },
+      { "day": "tuesday", "title": "PO Overleg", "startTime": "10:00", "endTime": "11:30", "description": "Afstemming met Product Owner" },
+      { "day": "tuesday", "title": "Team Observatie", "startTime": "13:00", "endTime": "17:00", "description": "Observeren teamdynamiek en samenwerking" },
+      { "day": "wednesday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Faciliteren van de daily" },
+      { "day": "wednesday", "title": "Impediment Oplossing", "startTime": "09:30", "endTime": "12:00", "description": "Wegnemen van blokkades" },
+      { "day": "wednesday", "title": "Management Update", "startTime": "14:00", "endTime": "15:30", "description": "Voortgangs­update aan management" },
+      { "day": "thursday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Faciliteren van de daily" },
+      { "day": "thursday", "title": "Sprint Planning", "startTime": "09:30", "endTime": "11:30", "description": "Faciliteren sprint planning" },
+      { "day": "thursday", "title": "Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "Documenten en retro­acties bijwerken" },
+      { "day": "friday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Faciliteren van de daily" },
+      { "day": "friday", "title": "Sprint Review & Retrospective", "startTime": "13:00", "endTime": "16:30", "description": "Afsluiting en reflectie sprint" }
+    ],
+    "workDistribution": [
+      { "category": "Ceremonies Faciliteren", "percentage": 35 },
+      { "category": "Team Coaching", "percentage": 30 },
+      { "category": "Impediment Oplossing", "percentage": 20 },
+      { "category": "Management Rapportage", "percentage": 10 },
+      { "category": "Documentatie", "percentage": 5 }
+    ],
+    "skills": [
+      { "skillName": "Scrum / Kanban", "level": 5, "description": "Agile frameworks en ceremonies" },
+      { "skillName": "Coaching & Facilitatie", "level": 4, "description": "Team­dynamiek en groeps­processen" },
+      { "skillName": "Jira / Confluence", "level": 4, "description": "Agile tooling en backlogs" },
+      { "skillName": "Communicatie", "level": 5, "description": "Helder communiceren op alle niveaus" },
+      { "skillName": "Conflictresolutie", "level": 3, "description": "Spanningen herkennen en oplossen" }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Cybersecurity Consultant",
+    "department": "Defensie Cyber Commando",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 11",
+    "functionDomain": "Security",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Cybersecurity Consultant adviseer je over de implementatie van beveiligings­maatregelen voor kritieke defensie­infrastructuur. Je voert risico­beoordelingen uit, stelt beveiligings­beleid op en ondersteunt projecten bij de inbedding van security. Je bent een sparringpartner voor architecten en management.",
+    "dailyActivities": "Je voert security assessments uit voor nieuwe en bestaande systemen, schrijft adviesrapporten en begeleidt teams bij de implementatie van security controls. Je houdt dreigingsinformatie bij en vertaalt die naar praktische maatregelen.",
+    "contactPerson": {
+      "name": "Mevr. Iris Willems",
+      "email": "i.willems@defensie.nl",
+      "phone": "070-316 4015"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Dreigings­briefing", "startTime": "08:30", "endTime": "09:30", "description": "Actuele dreigings­informatie bespreken" },
+      { "day": "monday", "title": "Security Assessment", "startTime": "09:30", "endTime": "12:00", "description": "Uitvoeren beveiligings­beoordeling" },
+      { "day": "monday", "title": "Adviesrapport Schrijven", "startTime": "13:00", "endTime": "17:00", "description": "Opstellen beveiligings­advies" },
+      { "day": "tuesday", "title": "Dreigings­briefing", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse dreigings­update" },
+      { "day": "tuesday", "title": "Project Begeleiding", "startTime": "09:00", "endTime": "12:00", "description": "Security advies aan project­teams" },
+      { "day": "tuesday", "title": "Beleid Opstellen", "startTime": "13:00", "endTime": "17:00", "description": "Schrijven security­beleid en procedures" },
+      { "day": "wednesday", "title": "Dreigings­briefing", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse dreigings­update" },
+      { "day": "wednesday", "title": "Risk Workshop", "startTime": "09:00", "endTime": "12:00", "description": "Risico­identificatie met stakeholders" },
+      { "day": "wednesday", "title": "Compliance Check", "startTime": "13:00", "endTime": "17:00", "description": "Toetsing aan NEN/ISO-normen" },
+      { "day": "thursday", "title": "Management Advies", "startTime": "10:00", "endTime": "12:00", "description": "Presentatie bevindingen aan management" },
+      { "day": "thursday", "title": "Kennisdeling", "startTime": "14:00", "endTime": "16:00", "description": "Interne security awareness sessie" },
+      { "day": "friday", "title": "Dreigings­briefing", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse dreigings­update" },
+      { "day": "friday", "title": "Weekrapportage", "startTime": "09:00", "endTime": "11:00", "description": "Wekelijkse security status" }
+    ],
+    "workDistribution": [
+      { "category": "Security Assessments", "percentage": 35 },
+      { "category": "Advies & Rapportage", "percentage": 25 },
+      { "category": "Beleid & Compliance", "percentage": 20 },
+      { "category": "Project Begeleiding", "percentage": 12 },
+      { "category": "Kennisdeling", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Risk Management (ISO 27001)", "level": 5, "description": "Risico­beoordeling en -behandeling" },
+      { "skillName": "Security Architectuur", "level": 4, "description": "Security by design principes" },
+      { "skillName": "Penetration Testing", "level": 3, "description": "Gecontroleerde security tests" },
+      { "skillName": "Compliance & Normering", "level": 4, "description": "NEN / BIO / ISO standaarden" },
+      { "skillName": "Stakeholder­management", "level": 4, "description": "Adviseren op directieniveau" }
+    ]
+  },
+  {
     "id": "8",
     "title": "Data Scientist",
     "department": "Directie Strategie & Kennis",
@@ -378,6 +705,760 @@
       { "skillName": "SQL / Big Data", "level": 4, "description": "Grootschalige dataverwerking" },
       { "skillName": "MLOps (MLflow, DVC)", "level": 3, "description": "Machine learning lifecycle management" },
       { "skillName": "Communicatie & Advies", "level": 4, "description": "Bevindingen vertalen naar beleid" }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Enterprise Architect",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 12",
+    "functionDomain": "Architecture",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Enterprise Architect bepaal je de strategische technologie­koers van de gehele Defensie ICT Organisatie. Je ontwikkelt en beheert de enterprise­architectuur, stelt kaders op voor solution architects en zorgt voor samenhang tussen systemen, processen en data. Je werkt op het snijvlak van techniek, strategie en beleid.",
+    "dailyActivities": "Je stelt architectuur­principes op en toetst nieuwe initiatieven hierop. Je adviseert het topmanagement over technologie­investeringen en -risico's. Je begeleidt architecture boards en draagt bij aan het nationaal en NAVO-architectuur­overleg.",
+    "contactPerson": {
+      "name": "Dr. Hans Verbeek",
+      "email": "h.verbeek@defensie.nl",
+      "phone": "070-316 4016"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Architecture Board", "startTime": "09:00", "endTime": "11:00", "description": "Wekelijks enterprise architectuur­overleg" },
+      { "day": "monday", "title": "Strategie Sessie", "startTime": "11:00", "endTime": "13:00", "description": "Afstemming ICT-strategie met CIO" },
+      { "day": "monday", "title": "Architectuur Document", "startTime": "14:00", "endTime": "17:00", "description": "Opstellen beleid­documenten" },
+      { "day": "tuesday", "title": "Governance Overleg", "startTime": "09:00", "endTime": "11:00", "description": "Architecture governance en compliance" },
+      { "day": "tuesday", "title": "Innovatie Onderzoek", "startTime": "11:00", "endTime": "13:00", "description": "Verkenning nieuwe technologieën" },
+      { "day": "tuesday", "title": "Solution Architect Begeleiding", "startTime": "14:00", "endTime": "17:00", "description": "Coaching solution architects" },
+      { "day": "wednesday", "title": "NAVO Afstemming", "startTime": "09:00", "endTime": "11:00", "description": "Architectuur­afstemming met bondgenoten" },
+      { "day": "wednesday", "title": "Kaders Opstellen", "startTime": "11:00", "endTime": "13:00", "description": "Technische kaders en richtlijnen" },
+      { "day": "wednesday", "title": "Management Advies", "startTime": "14:00", "endTime": "17:00", "description": "Strategisch advies aan directie" },
+      { "day": "thursday", "title": "Portfolio Review", "startTime": "10:00", "endTime": "12:00", "description": "Review IT-portfolio en investeringen" },
+      { "day": "thursday", "title": "Architectuur Review", "startTime": "13:00", "endTime": "16:00", "description": "Toetsing projecten aan enterprise­kaders" },
+      { "day": "friday", "title": "Kennis & Innovatie", "startTime": "09:00", "endTime": "11:00", "description": "Volgen trends en wetenschappelijke publicaties" },
+      { "day": "friday", "title": "Weekreflectie", "startTime": "14:00", "endTime": "16:00", "description": "Strategische terugblik en vooruitblik" }
+    ],
+    "workDistribution": [
+      { "category": "Strategisch Advies", "percentage": 30 },
+      { "category": "Architectuur Design", "percentage": 25 },
+      { "category": "Governance & Compliance", "percentage": 20 },
+      { "category": "Stakeholder­management", "percentage": 15 },
+      { "category": "Kennis­opbouw", "percentage": 10 }
+    ],
+    "skills": [
+      { "skillName": "TOGAF / ArchiMate", "level": 5, "description": "Enterprise architectuur­frameworks" },
+      { "skillName": "Strategisch Denken", "level": 5, "description": "Technologie­visie en -koers" },
+      { "skillName": "Cloud & Hybride Architectuur", "level": 4, "description": "Grootschalige cloud­strategieën" },
+      { "skillName": "Security Architecture", "level": 4, "description": "Defensie- en NAVO-beveiligings­kaders" },
+      { "skillName": "Bestuurs­kunde & Beleid", "level": 4, "description": "Overheids­context en wet­geving" }
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Data Engineer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Sergeant",
+    "scale": null,
+    "functionDomain": "Data",
+    "locations": ["Den Haag", "Amsterdam"],
+    "roleDescription": "Als Data Engineer bouw en beheer je de datapijplijnen die ruwe data omzetten naar bruikbare informatie voor analisten en data scientists. Je werkt aan schaalbare ETL-processen, data warehouses en realtime streaming­oplossingen voor de Defensie ICT Organisatie.",
+    "dailyActivities": "Je ontwerpt en onderhoudt datapijplijnen, lost data­kwaliteitsproblemen op en werkt nauw samen met data analisten. Je voert performance­optimalisaties uit op query's en pijplijnen en documenteert de data­architectuur.",
+    "contactPerson": {
+      "name": "Sergeant-Majoor Bas Dijkstra",
+      "email": "b.dijkstra@defensie.nl",
+      "phone": "070-316 4017"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Data Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Status pijplijnen en openstaande taken" },
+      { "day": "monday", "title": "Pijplijn Ontwikkeling", "startTime": "09:30", "endTime": "12:00", "description": "Bouwen nieuwe ETL-processen" },
+      { "day": "monday", "title": "Data Kwaliteit", "startTime": "13:00", "endTime": "17:00", "description": "Validatie en monitoring datakwaliteit" },
+      { "day": "tuesday", "title": "Data Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Analisten Overleg", "startTime": "10:00", "endTime": "11:30", "description": "Afstemming behoeften met analisten" },
+      { "day": "tuesday", "title": "Streaming Implementatie", "startTime": "13:00", "endTime": "17:00", "description": "Kafka / Flink streaming­processen" },
+      { "day": "wednesday", "title": "Data Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "Database Optimalisatie", "startTime": "09:30", "endTime": "12:00", "description": "Query en index optimalisatie" },
+      { "day": "wednesday", "title": "Architectuur Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "Bijwerken data­architectuur docs" },
+      { "day": "thursday", "title": "Data Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Incident Analyse", "startTime": "10:00", "endTime": "12:00", "description": "Analyse pijplijn­fouten" },
+      { "day": "thursday", "title": "Pipeline Deployment", "startTime": "13:00", "endTime": "17:00", "description": "Deployen nieuwe pijplijn­versies" },
+      { "day": "friday", "title": "Data Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "16:00", "description": "Terugkoppeling sprint resultaten" }
+    ],
+    "workDistribution": [
+      { "category": "Pijplijn Ontwikkeling", "percentage": 40 },
+      { "category": "Data Kwaliteit", "percentage": 20 },
+      { "category": "Overleg & Afstemming", "percentage": 15 },
+      { "category": "Optimalisatie", "percentage": 15 },
+      { "category": "Documentatie", "percentage": 10 }
+    ],
+    "skills": [
+      { "skillName": "Apache Spark / Kafka", "level": 4, "description": "Big data verwerking en streaming" },
+      { "skillName": "SQL / dbt", "level": 4, "description": "Data transformatie en modellering" },
+      { "skillName": "Python (pandas, pyspark)", "level": 4, "description": "Data engineering scripting" },
+      { "skillName": "Cloud (Azure Data Factory)", "level": 3, "description": "Cloud data­platform beheer" },
+      { "skillName": "Data Kwaliteit (Great Expectations)", "level": 3, "description": "Validatie en monitoring" }
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Mobile Developer",
+    "department": "Commando Landstrijdkrachten",
+    "personnelType": "military",
+    "rank": "Korporaal",
+    "scale": null,
+    "functionDomain": "Software Development",
+    "locations": ["Breda", "Utrecht"],
+    "roleDescription": "Als Mobile Developer ontwikkel je veilige mobiele applicaties voor operationele defensie­eenheden. Je bouwt cross-platform apps met React Native of native iOS/Android en zorgt dat ze werken in beperkte connectiviteits­omgevingen. Veiligheid en robuustheid staan centraal.",
+    "dailyActivities": "Je implementeert nieuwe features voor de mobiele apps, lost bugs op en zorgt voor backward-compatibility. Je werkt samen met UX-designers en backend­developers en voert uitgebreide testen uit op echte apparaten.",
+    "contactPerson": {
+      "name": "Korporaal Daan Vermeulen",
+      "email": "d.vermeulen@defensie.nl",
+      "phone": "076-527 4018"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "monday", "title": "Feature Ontwikkeling", "startTime": "09:30", "endTime": "17:00", "description": "Implementatie mobiele functionaliteit" },
+      { "day": "tuesday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "UX Review", "startTime": "10:00", "endTime": "11:30", "description": "Afstemming met designers" },
+      { "day": "tuesday", "title": "API Integratie", "startTime": "13:00", "endTime": "17:00", "description": "Koppeling met backend services" },
+      { "day": "wednesday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "Device Testing", "startTime": "09:30", "endTime": "12:00", "description": "Testen op fysieke apparaten" },
+      { "day": "wednesday", "title": "Performance Optimalisatie", "startTime": "13:00", "endTime": "17:00", "description": "App snelheid en batterij optimalisatie" },
+      { "day": "thursday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Code Review", "startTime": "10:00", "endTime": "12:00", "description": "Review van pull requests" },
+      { "day": "thursday", "title": "Security Implementatie", "startTime": "13:00", "endTime": "17:00", "description": "Beveiligings­maatregelen implementeren" },
+      { "day": "friday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "16:30", "description": "Demo en retrospective" }
+    ],
+    "workDistribution": [
+      { "category": "Feature Ontwikkeling", "percentage": 45 },
+      { "category": "Testing", "percentage": 20 },
+      { "category": "Security", "percentage": 15 },
+      { "category": "Code Reviews", "percentage": 12 },
+      { "category": "Documentatie", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "React Native / Flutter", "level": 4, "description": "Cross-platform mobiele ontwikkeling" },
+      { "skillName": "iOS (Swift)", "level": 3, "description": "Native iOS ontwikkeling" },
+      { "skillName": "Android (Kotlin)", "level": 3, "description": "Native Android ontwikkeling" },
+      { "skillName": "REST API Integratie", "level": 4, "description": "Backend koppeling en authenticatie" },
+      { "skillName": "Mobile Security", "level": 3, "description": "Veilige opslag en communicatie" }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Informatiemanager",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Adjudant",
+    "scale": null,
+    "functionDomain": "Architecture",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Informatiemanager ben je verantwoordelijk voor het informatiebeleid en -beheer binnen de Defensie ICT Organisatie. Je stelt kaders op voor data­governance, informatie­architectuur en privacy. Je werkt nauw samen met architecten, juristen en het management.",
+    "dailyActivities": "Je adviseert over informatie­vraagstukken, bewaakt de naleving van informatiebeleid en coördineert data­governance initiatieven. Je voert overleggen met stakeholders en stelt beleidsdocumenten op die de informatie­huishouding verbeteren.",
+    "contactPerson": {
+      "name": "Luitenant-Kolonel Petra Mulder",
+      "email": "p.mulder@defensie.nl",
+      "phone": "070-316 4019"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Governance Overleg", "startTime": "09:00", "endTime": "11:00", "description": "Data governance comité" },
+      { "day": "monday", "title": "Beleid Ontwikkeling", "startTime": "11:00", "endTime": "13:00", "description": "Opstellen informatie­beleid" },
+      { "day": "monday", "title": "Stakeholder Gesprekken", "startTime": "14:00", "endTime": "17:00", "description": "Afstemming met afdelings­hoofden" },
+      { "day": "tuesday", "title": "Privacy Review", "startTime": "09:00", "endTime": "11:00", "description": "DPIA en AVG compliance review" },
+      { "day": "tuesday", "title": "Architectuur Afstemming", "startTime": "11:00", "endTime": "13:00", "description": "Afstemming met enterprise architecten" },
+      { "day": "tuesday", "title": "Rapport Schrijven", "startTime": "14:00", "endTime": "17:00", "description": "Management­rapportage informatie" },
+      { "day": "wednesday", "title": "Informatie­inventarisatie", "startTime": "09:00", "endTime": "12:00", "description": "Catalogiseren systemen en data" },
+      { "day": "wednesday", "title": "Beleid Implementatie", "startTime": "13:00", "endTime": "17:00", "description": "Begeleiding implementatie beleid" },
+      { "day": "thursday", "title": "Directie Briefing", "startTime": "10:00", "endTime": "12:00", "description": "Update aan directie" },
+      { "day": "thursday", "title": "Audit Voorbereiding", "startTime": "13:00", "endTime": "17:00", "description": "Voorbereiding interne audits" },
+      { "day": "friday", "title": "Weekreview", "startTime": "09:00", "endTime": "11:00", "description": "Voortgangs­review lopende initiatieven" }
+    ],
+    "workDistribution": [
+      { "category": "Beleid & Governance", "percentage": 35 },
+      { "category": "Stakeholder­management", "percentage": 25 },
+      { "category": "Rapportage", "percentage": 20 },
+      { "category": "Architectuur Advies", "percentage": 12 },
+      { "category": "Compliance", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Informatie­architectuur", "level": 5, "description": "Ontwerp en beheer van informatie­stromen" },
+      { "skillName": "Data Governance", "level": 4, "description": "Beleid, standaarden en beheer" },
+      { "skillName": "AVG / Privacy (GDPR)", "level": 4, "description": "Privacy wetgeving en compliance" },
+      { "skillName": "Stakeholder­management", "level": 4, "description": "Adviseren op directieniveau" },
+      { "skillName": "DPIA & Risicoanalyse", "level": 3, "description": "Privacy impact assessments" }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Testspecialist",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Soldaat 1e Klasse",
+    "scale": null,
+    "functionDomain": "Software Development",
+    "locations": ["Apeldoorn", "Den Haag"],
+    "roleDescription": "Als Testspecialist zorg je voor de kwaliteit van defensie­software door systematisch te testen en test­processen te verbeteren. Je schrijft testplannen, voert functionele en niet-functionele tests uit en rapporteert bevindingen aan het ontwikkel­team. Je draagt bij aan continue kwaliteits­bewaking.",
+    "dailyActivities": "Je analyseert requirements, maakt testscenario's en voert handmatige en geautomatiseerde tests uit. Je registreert bevindingen, volgt defects op en werkt samen met developers aan oplossingen. Je rapporteert testvoortgang aan de project­manager.",
+    "contactPerson": {
+      "name": "Sergeant Anouk van Leeuwen",
+      "email": "a.vanleeuwen@defensie.nl",
+      "phone": "055-526 4020"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Test Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Status testactiviteiten" },
+      { "day": "monday", "title": "Testplan Schrijven", "startTime": "09:30", "endTime": "12:00", "description": "Opstellen testplan nieuwe sprint" },
+      { "day": "monday", "title": "Functioneel Testen", "startTime": "13:00", "endTime": "17:00", "description": "Uitvoeren handmatige tests" },
+      { "day": "tuesday", "title": "Test Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Defect Analyse", "startTime": "09:30", "endTime": "11:00", "description": "Analyse en rapportage van defects" },
+      { "day": "tuesday", "title": "Regressie Testen", "startTime": "11:00", "endTime": "17:00", "description": "Regressie test suite uitvoeren" },
+      { "day": "wednesday", "title": "Test Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "Automatisering", "startTime": "09:30", "endTime": "12:00", "description": "Schrijven geautomatiseerde tests" },
+      { "day": "wednesday", "title": "Developer Overleg", "startTime": "13:00", "endTime": "14:30", "description": "Afstemming over gevonden defects" },
+      { "day": "thursday", "title": "Test Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Performance Tests", "startTime": "09:30", "endTime": "12:00", "description": "Last- en performance­tests" },
+      { "day": "thursday", "title": "Test Rapportage", "startTime": "13:00", "endTime": "17:00", "description": "Opstellen test­rapportage" },
+      { "day": "friday", "title": "Test Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "16:30", "description": "Sprint afsluiting en demo" }
+    ],
+    "workDistribution": [
+      { "category": "Functioneel Testen", "percentage": 35 },
+      { "category": "Test Automatisering", "percentage": 25 },
+      { "category": "Defect Management", "percentage": 20 },
+      { "category": "Rapportage", "percentage": 12 },
+      { "category": "Overleg", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Test Automatisering (Selenium, Cypress)", "level": 3, "description": "Geautomatiseerd testen van webapplicaties" },
+      { "skillName": "Testmanagement (Xray, Zephyr)", "level": 3, "description": "Testplanning en -rapportage" },
+      { "skillName": "Performance Testing (JMeter)", "level": 2, "description": "Last- en stresstesten" },
+      { "skillName": "SQL (testdata)", "level": 2, "description": "Opvragen en valideren testdata" },
+      { "skillName": "Agile Testing", "level": 3, "description": "Testen binnen scrum­sprints" }
+    ]
+  },
+  {
+    "id": "21",
+    "title": "Business Analyst",
+    "department": "Directie Financiën & Control",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 9",
+    "functionDomain": "Data",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Business Analyst bij de Directie Financiën & Control vertaal je business­behoeften naar concrete informatie­oplossingen. Je verzamelt requirements, modelleert processen en werkt nauw samen met IT-teams en stakeholders om waarde te leveren uit data en systemen.",
+    "dailyActivities": "Je voert gesprekken met stakeholders, documenteert requirements en stelt functionele specificaties op. Je ondersteunt projectteams bij de implementatie en test of oplossingen voldoen aan de behoeften van de business.",
+    "contactPerson": {
+      "name": "Mevr. Sophie Hartman",
+      "email": "s.hartman@defensie.nl",
+      "phone": "070-316 4021"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Stakeholder Interviews", "startTime": "09:00", "endTime": "11:00", "description": "Requirements ophalen bij gebruikers" },
+      { "day": "monday", "title": "Requirements Documentatie", "startTime": "11:00", "endTime": "13:00", "description": "Opstellen functionele specificaties" },
+      { "day": "monday", "title": "Proces­modellering", "startTime": "14:00", "endTime": "17:00", "description": "BPMN processen modelleren" },
+      { "day": "tuesday", "title": "IT Overleg", "startTime": "09:00", "endTime": "11:00", "description": "Afstemming met ontwikkelteam" },
+      { "day": "tuesday", "title": "Acceptatie Testen", "startTime": "11:00", "endTime": "13:00", "description": "UAT plannen en begeleiden" },
+      { "day": "tuesday", "title": "Rapportage", "startTime": "14:00", "endTime": "17:00", "description": "Voortgangs­rapportage projecten" },
+      { "day": "wednesday", "title": "Workshop Facilitatie", "startTime": "09:00", "endTime": "12:00", "description": "Requirements workshop met stakeholders" },
+      { "day": "wednesday", "title": "Gap Analyse", "startTime": "13:00", "endTime": "17:00", "description": "Analyse huidige vs gewenste situatie" },
+      { "day": "thursday", "title": "Review & Validatie", "startTime": "09:00", "endTime": "12:00", "description": "Validatie requirements met business" },
+      { "day": "thursday", "title": "Documentatie Bijwerken", "startTime": "13:00", "endTime": "17:00", "description": "Bijwerken specificaties na feedback" },
+      { "day": "friday", "title": "Weekoverzicht", "startTime": "09:00", "endTime": "10:30", "description": "Wekelijkse voortgangs­update" }
+    ],
+    "workDistribution": [
+      { "category": "Requirements Analyse", "percentage": 35 },
+      { "category": "Documentatie", "percentage": 25 },
+      { "category": "Stakeholder­management", "percentage": 20 },
+      { "category": "Testing & Validatie", "percentage": 12 },
+      { "category": "Proces­modellering", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Requirements Engineering", "level": 4, "description": "Elicitering en documentatie" },
+      { "skillName": "BPMN / Procesmodellering", "level": 4, "description": "Visueel modelleren van processen" },
+      { "skillName": "SQL (basis)", "level": 3, "description": "Data raadplegen voor analyses" },
+      { "skillName": "Jira / Confluence", "level": 3, "description": "Agile requirement­beheer" },
+      { "skillName": "Communicatie & Presentatie", "level": 4, "description": "Helder communiceren naar alle niveaus" }
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Change Manager",
+    "department": "Personeel & Organisatie",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 10",
+    "functionDomain": "Agile",
+    "locations": ["Utrecht", "Den Haag"],
+    "roleDescription": "Als Change Manager begeleid je medewerkers en organisatie­eenheden door IT-gerelateerde veranderingen. Je ontwikkelt change­strategieën, voert stakeholder­analyses uit en coördineert communicatie en training rondom nieuwe systemen en werkwijzen.",
+    "dailyActivities": "Je begeleidt organisatie­eenheden bij de adoptie van nieuwe systemen en processen. Je ontwikkelt trainings­materiaal, faciliteert workshops en volgt de adoptie­voortgang. Je rapporteert aan het programma­management.",
+    "contactPerson": {
+      "name": "Dhr. Wouter de Bruin",
+      "email": "w.debruin@defensie.nl",
+      "phone": "030-223 4022"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Change Overleg", "startTime": "09:00", "endTime": "10:30", "description": "Voortgang change initiatieven" },
+      { "day": "monday", "title": "Stakeholder Analyse", "startTime": "11:00", "endTime": "13:00", "description": "Bijwerken stakeholder­overzicht" },
+      { "day": "monday", "title": "Communicatie Ontwikkeling", "startTime": "14:00", "endTime": "17:00", "description": "Schrijven communicatie­uitingen" },
+      { "day": "tuesday", "title": "Training Facilitatie", "startTime": "09:00", "endTime": "12:00", "description": "Geven van change-trainingen" },
+      { "day": "tuesday", "title": "Adoptie Monitoring", "startTime": "13:00", "endTime": "17:00", "description": "Meten en rapporteren adoptie" },
+      { "day": "wednesday", "title": "Workshop Facilitatie", "startTime": "09:00", "endTime": "12:00", "description": "Interactieve change workshops" },
+      { "day": "wednesday", "title": "Management Gesprekken", "startTime": "13:00", "endTime": "17:00", "description": "Afstemming met line managers" },
+      { "day": "thursday", "title": "Impact Analyse", "startTime": "09:00", "endTime": "11:00", "description": "Analyse impact van verandering" },
+      { "day": "thursday", "title": "Rapportage", "startTime": "11:00", "endTime": "13:00", "description": "Voortgangs­rapportage programma­management" },
+      { "day": "friday", "title": "Weekreview", "startTime": "09:00", "endTime": "11:00", "description": "Terugblik en planning volgende week" }
+    ],
+    "workDistribution": [
+      { "category": "Change Begeleiding", "percentage": 35 },
+      { "category": "Training & Workshops", "percentage": 25 },
+      { "category": "Communicatie", "percentage": 20 },
+      { "category": "Stakeholder­management", "percentage": 12 },
+      { "category": "Rapportage", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Change Management (Prosci/ADKAR)", "level": 4, "description": "Methodische change begeleiding" },
+      { "skillName": "Communicatie & Schrijven", "level": 5, "description": "Heldere en motiverende boodschappen" },
+      { "skillName": "Training & Facilitatie", "level": 4, "description": "Interactieve workshop­s begeleiden" },
+      { "skillName": "Stakeholder­analyse", "level": 4, "description": "Belangen en weerstand in kaart brengen" },
+      { "skillName": "Projectmanagement", "level": 3, "description": "Change­planning en -voortgang" }
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Privacy Officer",
+    "department": "Defensie Cyber Commando",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 11",
+    "functionDomain": "Security",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Privacy Officer zorg je voor naleving van de AVG en defensie­specifieke privacy­regelgeving. Je adviseert afdelingen over verwerkingen van persoonsgegevens, voert DPIA's uit en onderhoudt het register van verwerkings­activiteiten. Je bent aanspreekpunt voor de Autoriteit Persoonsgegevens.",
+    "dailyActivities": "Je behandelt privacyvragen en -verzoeken, begeleidt DPIA's en beoordeelt verwerkings­overeenkomsten. Je verzorgt bewustwordings­trainingen en houdt het interne privacybeleid up-to-date. Je overlegt regelmatig met juridische en IT-afdelingen.",
+    "contactPerson": {
+      "name": "Mevr. Nienke Scholten",
+      "email": "n.scholten@defensie.nl",
+      "phone": "070-316 4023"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Privacy Casuïstiek", "startTime": "09:00", "endTime": "11:00", "description": "Behandeling ingekomen privacyvragen" },
+      { "day": "monday", "title": "DPIA Uitvoering", "startTime": "11:00", "endTime": "13:00", "description": "Data protection impact assessment" },
+      { "day": "monday", "title": "Register Bijwerken", "startTime": "14:00", "endTime": "17:00", "description": "Bijwerken verwerkings­register" },
+      { "day": "tuesday", "title": "Juridisch Overleg", "startTime": "09:00", "endTime": "11:00", "description": "Afstemming met juridische afdeling" },
+      { "day": "tuesday", "title": "Contracten Review", "startTime": "11:00", "endTime": "13:00", "description": "Beoordelen verwerkings­overeenkomsten" },
+      { "day": "tuesday", "title": "Beleid Bijwerken", "startTime": "14:00", "endTime": "17:00", "description": "Actualiseren privacybeleid" },
+      { "day": "wednesday", "title": "Bewustwording Training", "startTime": "09:00", "endTime": "11:00", "description": "Privacy training medewerkers" },
+      { "day": "wednesday", "title": "IT Overleg", "startTime": "11:00", "endTime": "13:00", "description": "Privacy advies bij IT projecten" },
+      { "day": "thursday", "title": "AP Afstemming", "startTime": "10:00", "endTime": "12:00", "description": "Contact met Autoriteit Persoonsgegevens" },
+      { "day": "thursday", "title": "Rapportage", "startTime": "13:00", "endTime": "17:00", "description": "Privacyrapportage voor management" },
+      { "day": "friday", "title": "Weekoverzicht", "startTime": "09:00", "endTime": "11:00", "description": "Afsluiting week en planning" }
+    ],
+    "workDistribution": [
+      { "category": "Advisering & DPIA", "percentage": 35 },
+      { "category": "Beleid & Compliance", "percentage": 25 },
+      { "category": "Bewustwording", "percentage": 20 },
+      { "category": "Contracten & Overeenkomsten", "percentage": 12 },
+      { "category": "Rapportage", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "AVG / GDPR", "level": 5, "description": "Privacywetgeving en toepassingen" },
+      { "skillName": "DPIA Uitvoering", "level": 5, "description": "Privacy impact assessments" },
+      { "skillName": "Juridisch Schrijven", "level": 4, "description": "Beleid en adviesdocumenten" },
+      { "skillName": "IT Systemen (privacy)", "level": 3, "description": "Technische privacy­maatregelen" },
+      { "skillName": "Communicatie & Training", "level": 4, "description": "Bewustwordingsactiviteiten" }
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Chief Architect Advisor",
+    "department": "Directie Strategie & Kennis",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 12",
+    "functionDomain": "Architecture",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Chief Architect Advisor adviseer je op het hoogste niveau over de technologische koers van Defensie. Je vertaalt politieke ambities en strategische doelstellingen naar architectuur­visies en investerings­programma's. Je werkt samen met de CIO, CISO en internationale partners.",
+    "dailyActivities": "Je voert strategische gesprekken met de top­leiding van Defensie en externe partners. Je stelt visie­documenten en adviesnota's op over technologische transities. Je vertegenwoordigt Defensie in nationale en internationale architectuur­fora.",
+    "contactPerson": {
+      "name": "Prof. dr. Arjan van Rooij",
+      "email": "a.vanrooij@defensie.nl",
+      "phone": "070-316 4024"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "CIO Briefing", "startTime": "09:00", "endTime": "10:00", "description": "Wekelijkse briefing aan CIO" },
+      { "day": "monday", "title": "Strategisch Overleg", "startTime": "10:30", "endTime": "13:00", "description": "Strategische afstemming directie" },
+      { "day": "monday", "title": "Visie Document", "startTime": "14:00", "endTime": "17:00", "description": "Uitwerken architectuurvisie" },
+      { "day": "tuesday", "title": "Extern Forum", "startTime": "09:00", "endTime": "12:00", "description": "Nationaal architectuur­forum" },
+      { "day": "tuesday", "title": "Architectuur Review", "startTime": "13:00", "endTime": "17:00", "description": "Review strategische projecten" },
+      { "day": "wednesday", "title": "NAVO Overleg", "startTime": "09:00", "endTime": "12:00", "description": "Internationaal architectuur­overleg" },
+      { "day": "wednesday", "title": "Advies­nota Schrijven", "startTime": "13:00", "endTime": "17:00", "description": "Opstellen beleids­adviezen" },
+      { "day": "thursday", "title": "Investering Advies", "startTime": "09:00", "endTime": "11:00", "description": "Advies investeringsprogramma's" },
+      { "day": "thursday", "title": "Presentatie Voorbereiding", "startTime": "13:00", "endTime": "17:00", "description": "Voorbereiding parlementaire briefing" },
+      { "day": "friday", "title": "Kennis & Innovatie", "startTime": "09:00", "endTime": "12:00", "description": "Bijhouden internationale technologie­trends" }
+    ],
+    "workDistribution": [
+      { "category": "Strategisch Advies", "percentage": 40 },
+      { "category": "Visie & Beleid", "percentage": 25 },
+      { "category": "Externe Vertegenwoordiging", "percentage": 20 },
+      { "category": "Governance", "percentage": 10 },
+      { "category": "Kennis­opbouw", "percentage": 5 }
+    ],
+    "skills": [
+      { "skillName": "Enterprise Architectuur (TOGAF)", "level": 5, "description": "Strategische architectuur­kaderstelling" },
+      { "skillName": "Strategisch Leiderschap", "level": 5, "description": "Visie en richting geven op C-suite niveau" },
+      { "skillName": "Internationale Samenwerking", "level": 4, "description": "NAVO en EU architectuur­afstemming" },
+      { "skillName": "Digitale Transformatie", "level": 5, "description": "Grootschalige IT-transities leiden" },
+      { "skillName": "Public Sector Kennis", "level": 4, "description": "Overheid, defensie en wetgeving" }
+    ]
+  },
+  {
+    "id": "25",
+    "title": "IT Trainer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Soldaat 1e Klasse",
+    "scale": null,
+    "functionDomain": "Agile",
+    "locations": ["Utrecht", "Apeldoorn"],
+    "roleDescription": "Als IT Trainer begeleid je defensiemedewerkers bij het aanleren van nieuwe technologieën en systemen. Je verzorgt praktijkgerichte trainingen op het gebied van softwaregebruik, security-bewustzijn en agile werkwijzen. Je ontwikkelt trainingsmateriaal en past lesinhoud aan op het niveau van de deelnemers.",
+    "dailyActivities": "Je geeft trainingen aan kleine groepen, ontwikkelt e-learningmodules en begeleidt medewerkers op de werkplek. Je evalueert de effectiviteit van trainingen en past het aanbod aan op basis van feedback.",
+    "contactPerson": {
+      "name": "Sergeant Nora Janssen",
+      "email": "n.janssen@defensie.nl",
+      "phone": "030-299 4025"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Training Voorbereiding", "startTime": "08:30", "endTime": "09:30", "description": "Voorbereiding lesmateriaal" },
+      { "day": "monday", "title": "Training Groep A", "startTime": "09:30", "endTime": "12:00", "description": "Praktijktraining nieuwe systemen" },
+      { "day": "monday", "title": "E-learning Ontwikkeling", "startTime": "13:00", "endTime": "17:00", "description": "Bouwen van digitale leermodules" },
+      { "day": "tuesday", "title": "Training Groep B", "startTime": "09:00", "endTime": "12:00", "description": "Security awareness training" },
+      { "day": "tuesday", "title": "Coaching On-the-job", "startTime": "13:00", "endTime": "17:00", "description": "Begeleiding op de werkplek" },
+      { "day": "wednesday", "title": "Materiaal Ontwikkeling", "startTime": "09:00", "endTime": "12:00", "description": "Schrijven handboeken en slides" },
+      { "day": "wednesday", "title": "Evaluatie & Feedback", "startTime": "13:00", "endTime": "15:00", "description": "Verwerken evaluatieresultaten" },
+      { "day": "thursday", "title": "Training Groep C", "startTime": "09:00", "endTime": "12:00", "description": "Agile werkwijzen training" },
+      { "day": "thursday", "title": "Trainerssessie", "startTime": "14:00", "endTime": "16:00", "description": "Intervisie met andere trainers" },
+      { "day": "friday", "title": "Weekplanning", "startTime": "09:00", "endTime": "10:30", "description": "Planning volgende trainingsweek" }
+    ],
+    "workDistribution": [
+      { "category": "Trainingen Geven", "percentage": 40 },
+      { "category": "Materiaal Ontwikkeling", "percentage": 30 },
+      { "category": "Coaching & Begeleiding", "percentage": 15 },
+      { "category": "Evaluatie", "percentage": 10 },
+      { "category": "Overleg", "percentage": 5 }
+    ],
+    "skills": [
+      { "skillName": "Didactiek & Instructieontwerp", "level": 4, "description": "Leerinhouden effectief overbrengen" },
+      { "skillName": "E-learning Tools (Articulate)", "level": 3, "description": "Digitale leermodules bouwen" },
+      { "skillName": "Presentatievaardigheden", "level": 4, "description": "Boeiend en helder presenteren" },
+      { "skillName": "IT-basiskennis", "level": 3, "description": "Brede kennis van systemen en tools" },
+      { "skillName": "Agile / Scrum", "level": 3, "description": "Agile werkwijzen uitleggen en toepassen" }
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Security Analyst",
+    "department": "Defensie Cyber Commando",
+    "personnelType": "military",
+    "rank": "Korporaal",
+    "scale": null,
+    "functionDomain": "Security",
+    "locations": ["Den Haag", "Breda"],
+    "roleDescription": "Als Security Analyst monitor je actief de defensienetwerken en -systemen op dreigingen en incidenten. Je analyseert beveiligingslogs, voert triage uit op alerts en escaleert kritieke bevindingen. Je werkt in een Security Operations Center en draagt bij aan de continue verbetering van detectiemogelijkheden.",
+    "dailyActivities": "Je bewaakt de SOC-dashboards, analyseert inkomende security alerts en stelt incident tickets op. Je werkt samen met senior analisten aan complexere incidenten en documenteert je bevindingen in het ticketingsysteem.",
+    "contactPerson": {
+      "name": "Sergeant Kim Oosterbeek",
+      "email": "k.oosterbeek@defensie.nl",
+      "phone": "070-316 4026"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "SOC Overdracht", "startTime": "08:00", "endTime": "08:30", "description": "Overdracht van vorige shift" },
+      { "day": "monday", "title": "Alert Triage", "startTime": "08:30", "endTime": "12:00", "description": "Prioriteren en analyseren alerts" },
+      { "day": "monday", "title": "Incident Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "Vastleggen en rapporteren incidenten" },
+      { "day": "tuesday", "title": "SOC Overdracht", "startTime": "08:00", "endTime": "08:30", "description": "Dagelijkse overdracht" },
+      { "day": "tuesday", "title": "Log Analyse", "startTime": "08:30", "endTime": "12:00", "description": "Diepgaande analyse van security logs" },
+      { "day": "tuesday", "title": "Threat Intelligence Update", "startTime": "13:00", "endTime": "15:00", "description": "Bijwerken van dreigingsinformatie" },
+      { "day": "wednesday", "title": "SOC Overdracht", "startTime": "08:00", "endTime": "08:30", "description": "Dagelijkse overdracht" },
+      { "day": "wednesday", "title": "Detection Rule Tuning", "startTime": "08:30", "endTime": "12:00", "description": "Verfijnen van detectieregels" },
+      { "day": "wednesday", "title": "Kennissessie", "startTime": "13:00", "endTime": "15:00", "description": "Security kennisdeling in team" },
+      { "day": "thursday", "title": "SOC Overdracht", "startTime": "08:00", "endTime": "08:30", "description": "Dagelijkse overdracht" },
+      { "day": "thursday", "title": "Vulnerability Scan Review", "startTime": "08:30", "endTime": "12:00", "description": "Review resultaten kwetsbaarheidsscans" },
+      { "day": "friday", "title": "Weekrapportage", "startTime": "09:00", "endTime": "11:00", "description": "Wekelijkse SOC-rapportage" }
+    ],
+    "workDistribution": [
+      { "category": "Alert Monitoring & Triage", "percentage": 40 },
+      { "category": "Incident Analyse", "percentage": 25 },
+      { "category": "Documentatie", "percentage": 15 },
+      { "category": "Detection Tuning", "percentage": 12 },
+      { "category": "Kennisdeling", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "SIEM (Splunk / Sentinel)", "level": 3, "description": "Security monitoring en alerting" },
+      { "skillName": "Netwerk Analyse", "level": 3, "description": "Pakketanalyse en netwerkprotocollen" },
+      { "skillName": "Incident Response", "level": 3, "description": "Basisvaardigheden incidentafhandeling" },
+      { "skillName": "Threat Intelligence", "level": 2, "description": "Dreigingsinformatie verwerken" },
+      { "skillName": "Linux / Windows Security", "level": 3, "description": "OS-niveau beveiligingsanalyse" }
+    ]
+  },
+  {
+    "id": "27",
+    "title": "Scrum Master (Militair)",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Sergeant",
+    "scale": null,
+    "functionDomain": "Agile",
+    "locations": ["Utrecht", "Den Haag"],
+    "roleDescription": "Als Scrum Master bij de Defensie ICT Organisatie faciliteer je agile teams die werken aan kritieke defensiesoftware. Je coacht teams in zelforganisatie, verwijdert impedimenten en zorgt voor effectieve ceremonies. Je combineert militaire discipline met moderne agile principes.",
+    "dailyActivities": "Je faciliteert dagelijkse stand-ups, sprint planningen en retrospectives. Je coacht teamleden in agile denken en bewaakt de voortgang van sprint doelstellingen. Je werkt nauw samen met de Product Owner en operationeel management.",
+    "contactPerson": {
+      "name": "Adjudant Roy Huisman",
+      "email": "r.huisman@defensie.nl",
+      "phone": "030-299 4027"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Daily Stand-up Team A", "startTime": "09:00", "endTime": "09:15", "description": "Faciliteren daily team A" },
+      { "day": "monday", "title": "Daily Stand-up Team B", "startTime": "09:30", "endTime": "09:45", "description": "Faciliteren daily team B" },
+      { "day": "monday", "title": "Impediment Oplossing", "startTime": "10:00", "endTime": "12:00", "description": "Wegnemen blokkades teams" },
+      { "day": "monday", "title": "PO Overleg", "startTime": "13:00", "endTime": "14:30", "description": "Afstemming met Product Owner" },
+      { "day": "tuesday", "title": "Dailies", "startTime": "09:00", "endTime": "10:00", "description": "Stand-ups beide teams" },
+      { "day": "tuesday", "title": "Team Coaching", "startTime": "10:30", "endTime": "12:00", "description": "Individuele coachings" },
+      { "day": "tuesday", "title": "Retrospective Team A", "startTime": "14:00", "endTime": "15:30", "description": "Sprint retrospective" },
+      { "day": "wednesday", "title": "Dailies", "startTime": "09:00", "endTime": "10:00", "description": "Stand-ups beide teams" },
+      { "day": "wednesday", "title": "Management Rapportage", "startTime": "10:00", "endTime": "12:00", "description": "Voortgangs update aan management" },
+      { "day": "thursday", "title": "Sprint Planning", "startTime": "09:00", "endTime": "11:30", "description": "Planning nieuwe sprint" },
+      { "day": "thursday", "title": "Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "Bijwerken team metrics" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "13:00", "endTime": "15:00", "description": "Faciliteren sprint review" }
+    ],
+    "workDistribution": [
+      { "category": "Ceremonies Faciliteren", "percentage": 35 },
+      { "category": "Team Coaching", "percentage": 30 },
+      { "category": "Impediment Oplossing", "percentage": 20 },
+      { "category": "Rapportage", "percentage": 10 },
+      { "category": "Kennisdeling", "percentage": 5 }
+    ],
+    "skills": [
+      { "skillName": "Scrum (PSM gecertificeerd)", "level": 5, "description": "Agile faciliteren en coachen" },
+      { "skillName": "Coaching & Communicatie", "level": 4, "description": "Teamdynamiek begeleiden" },
+      { "skillName": "Jira / Confluence", "level": 4, "description": "Agile tooling en backlog beheer" },
+      { "skillName": "Conflictresolutie", "level": 3, "description": "Spanningen hanteren in teams" },
+      { "skillName": "Militair Leiderschap", "level": 4, "description": "Aansturen binnen militaire context" }
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Lead Data Engineer",
+    "department": "Directie Strategie & Kennis",
+    "personnelType": "military",
+    "rank": "Adjudant",
+    "scale": null,
+    "functionDomain": "Data",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Lead Data Engineer stuur je een team van data engineers aan en draag je bij aan de strategische datakwaliteit en -infrastructuur van defensie. Je ontwerpt de technische data-architectuur, bewaakt standaarden en fungeert als aanspreekpunt voor data-gerelateerde vraagstukken van het management.",
+    "dailyActivities": "Je begeleidt junior en medior data engineers, voert technische reviews uit en lost complexe architectuurvraagstukken op. Je stelt technische standaarden op en rapporteert over datakwaliteit en platformvoortgang aan de directie.",
+    "contactPerson": {
+      "name": "Luitenant-Kolonel Ties Borst",
+      "email": "t.borst@defensie.nl",
+      "phone": "070-316 4028"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Afstemming data engineering team" },
+      { "day": "monday", "title": "Architectuur Review", "startTime": "10:00", "endTime": "12:00", "description": "Review technische designs team" },
+      { "day": "monday", "title": "Platform Ontwikkeling", "startTime": "13:00", "endTime": "17:00", "description": "Bouwen data platform componenten" },
+      { "day": "tuesday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Stakeholder Overleg", "startTime": "10:00", "endTime": "12:00", "description": "Afstemming met directie en analisten" },
+      { "day": "tuesday", "title": "Code Review", "startTime": "13:00", "endTime": "15:00", "description": "Review pijplijncode van team" },
+      { "day": "wednesday", "title": "Platform Architectuur", "startTime": "09:00", "endTime": "12:00", "description": "Ontwerpen data platform architectuur" },
+      { "day": "wednesday", "title": "Standaarden Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "Schrijven technische standaarden" },
+      { "day": "thursday", "title": "Team Coaching", "startTime": "09:00", "endTime": "11:00", "description": "Begeleiding junior engineers" },
+      { "day": "thursday", "title": "Management Rapportage", "startTime": "13:00", "endTime": "15:00", "description": "Data platform voortgang rapportage" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "16:00", "description": "Sprint afsluiting en demo" }
+    ],
+    "workDistribution": [
+      { "category": "Technisch Leiderschap", "percentage": 30 },
+      { "category": "Platform Ontwikkeling", "percentage": 25 },
+      { "category": "Team Coaching", "percentage": 20 },
+      { "category": "Stakeholder­management", "percentage": 15 },
+      { "category": "Documentatie", "percentage": 10 }
+    ],
+    "skills": [
+      { "skillName": "Data Architectuur", "level": 5, "description": "Grootschalige data platform ontwerpen" },
+      { "skillName": "Apache Spark / Databricks", "level": 5, "description": "Big data verwerking op schaal" },
+      { "skillName": "Cloud Data Platforms (Azure)", "level": 4, "description": "Cloud-native data oplossingen" },
+      { "skillName": "Technisch Leiderschap", "level": 4, "description": "Team aansturen en ontwikkelen" },
+      { "skillName": "DataOps / MLOps", "level": 4, "description": "Operationaliseren van data pipelines" }
+    ]
+  },
+  {
+    "id": "29",
+    "title": "IT Support Medewerker",
+    "department": "Commando Landstrijdkrachten",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 9",
+    "functionDomain": "DevOps",
+    "locations": ["Breda", "Apeldoorn"],
+    "roleDescription": "Als IT Support Medewerker ben je het eerste aanspreekpunt voor eindgebruikers bij technische problemen. Je lost incidenten op, behandelt serviceverzoeken en escaleert complexe problemen naar de juiste specialisten. Je draagt bij aan een hoge medewerkerstevredenheid door snel en vriendelijk te helpen.",
+    "dailyActivities": "Je behandelt dagelijks inkomende tickets via telefoon, e-mail en chat. Je installeert en configureert hardware en software, beheert gebruikersaccounts en documenteert oplossingen in de kennisbank.",
+    "contactPerson": {
+      "name": "Dhr. Leon Timmers",
+      "email": "l.timmers@defensie.nl",
+      "phone": "076-527 4029"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Ticket Verwerking", "startTime": "08:00", "endTime": "12:00", "description": "Behandelen ingekomen supporttickets" },
+      { "day": "monday", "title": "Gebruikers­ondersteuning", "startTime": "13:00", "endTime": "17:00", "description": "Telefonische en on-site ondersteuning" },
+      { "day": "tuesday", "title": "Hardware Installatie", "startTime": "09:00", "endTime": "12:00", "description": "Installeren en configureren apparatuur" },
+      { "day": "tuesday", "title": "Ticket Verwerking", "startTime": "13:00", "endTime": "17:00", "description": "Afhandelen openstaande tickets" },
+      { "day": "wednesday", "title": "Account Beheer", "startTime": "09:00", "endTime": "12:00", "description": "Aanmaken en beheren gebruikersaccounts" },
+      { "day": "wednesday", "title": "Kennisbank Bijwerken", "startTime": "13:00", "endTime": "15:00", "description": "Documenteren oplossingen" },
+      { "day": "thursday", "title": "Ticket Verwerking", "startTime": "08:00", "endTime": "12:00", "description": "Afhandelen tickets" },
+      { "day": "thursday", "title": "Software Uitrol", "startTime": "13:00", "endTime": "17:00", "description": "Uitrollen software updates" },
+      { "day": "friday", "title": "Weekrapportage", "startTime": "09:00", "endTime": "10:00", "description": "Ticket statistieken rapporteren" }
+    ],
+    "workDistribution": [
+      { "category": "Incident Afhandeling", "percentage": 45 },
+      { "category": "Hardware / Software Installatie", "percentage": 20 },
+      { "category": "Account Beheer", "percentage": 15 },
+      { "category": "Documentatie", "percentage": 12 },
+      { "category": "Rapportage", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Windows 10/11 Support", "level": 3, "description": "Eindgebruiker­ondersteuning Windows" },
+      { "skillName": "Active Directory", "level": 3, "description": "Gebruikers- en groepsbeheer" },
+      { "skillName": "ITSM (ServiceNow)", "level": 3, "description": "Ticketafhandeling en rapportage" },
+      { "skillName": "Netwerk Basis", "level": 2, "description": "Basis netwerk­troubleshooting" },
+      { "skillName": "Communicatie", "level": 4, "description": "Vriendelijk en duidelijk communiceren" }
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Cloud Engineer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 10",
+    "functionDomain": "DevOps",
+    "locations": ["Den Haag", "Rotterdam"],
+    "roleDescription": "Als Cloud Engineer ontwerp en beheer je de cloudinfrastructuur van de Defensie ICT Organisatie op Microsoft Azure. Je migreert on-premise workloads naar de cloud, optimaliseert kosten en prestaties en zorgt voor een veilige en compliant cloudomgeving volgens overheids­richtlijnen.",
+    "dailyActivities": "Je implementeert Infrastructure-as-Code met Terraform, beheert Kubernetes-clusters en bewaakt de cloudomgeving via Azure Monitor. Je werkt samen met security- en architectuurteams aan cloud-native oplossingen.",
+    "contactPerson": {
+      "name": "Mevr. Inge Bouwman",
+      "email": "i.bouwman@defensie.nl",
+      "phone": "070-316 4030"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Cloud Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Status cloud omgevingen" },
+      { "day": "monday", "title": "Infrastructuur Ontwikkeling", "startTime": "09:30", "endTime": "12:00", "description": "Terraform en ARM templates bouwen" },
+      { "day": "monday", "title": "Kubernetes Beheer", "startTime": "13:00", "endTime": "17:00", "description": "AKS cluster beheer en optimalisatie" },
+      { "day": "tuesday", "title": "Cloud Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Migratie Werkzaamheden", "startTime": "09:30", "endTime": "12:00", "description": "On-premise naar cloud migratie" },
+      { "day": "tuesday", "title": "Kosten Optimalisatie", "startTime": "13:00", "endTime": "15:00", "description": "Azure Cost Management review" },
+      { "day": "wednesday", "title": "Security Review", "startTime": "09:00", "endTime": "11:00", "description": "Cloud security posture beoordeling" },
+      { "day": "wednesday", "title": "Architectuur Overleg", "startTime": "11:00", "endTime": "13:00", "description": "Afstemming cloud architectuur" },
+      { "day": "thursday", "title": "Monitoring & Alerting", "startTime": "09:00", "endTime": "12:00", "description": "Azure Monitor en alerting inrichten" },
+      { "day": "thursday", "title": "Documentatie", "startTime": "13:00", "endTime": "17:00", "description": "IaC en runbook documentatie" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "16:00", "description": "Sprint demo en retrospective" }
+    ],
+    "workDistribution": [
+      { "category": "Cloud Infrastructuur", "percentage": 35 },
+      { "category": "Kubernetes & Containers", "percentage": 25 },
+      { "category": "Migratie", "percentage": 20 },
+      { "category": "Security & Compliance", "percentage": 12 },
+      { "category": "Documentatie", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Microsoft Azure", "level": 4, "description": "Cloud platform beheer en architectuur" },
+      { "skillName": "Terraform / Bicep", "level": 4, "description": "Infrastructure as Code" },
+      { "skillName": "Kubernetes (AKS)", "level": 4, "description": "Container orchestratie" },
+      { "skillName": "Azure DevOps / Pipelines", "level": 3, "description": "CI/CD in de cloud" },
+      { "skillName": "Cloud Security (CSPM)", "level": 3, "description": "Cloud security posture management" }
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Machine Learning Engineer",
+    "department": "Directie Strategie & Kennis",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 11",
+    "functionDomain": "Data",
+    "locations": ["Den Haag", "Amsterdam"],
+    "roleDescription": "Als Machine Learning Engineer bouw je schaalbare ML-infrastructuur en -pijplijnen die data scientists in staat stellen modellen snel te trainen, valideren en deployen. Je werkt op het snijvlak van data engineering en data science en zorgt voor productie-ready ML-systemen.",
+    "dailyActivities": "Je implementeert MLOps-pipelines, beheert feature stores en deployt modellen naar productie-API's. Je werkt samen met data scientists aan het verbeteren van modelperformance en -hertraining. Je bewaakt modelgezondheid en datakwaliteit in productie.",
+    "contactPerson": {
+      "name": "Dr. Maaike Visser",
+      "email": "m.visser@defensie.nl",
+      "phone": "020-702 4031"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "ML Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Status ML projecten" },
+      { "day": "monday", "title": "Model Deployment", "startTime": "09:30", "endTime": "12:00", "description": "Deployen modellen naar productie" },
+      { "day": "monday", "title": "Pipeline Ontwikkeling", "startTime": "13:00", "endTime": "17:00", "description": "MLOps pipeline bouwen" },
+      { "day": "tuesday", "title": "Data Scientist Samenwerking", "startTime": "09:00", "endTime": "12:00", "description": "Ondersteuning data scientists" },
+      { "day": "tuesday", "title": "Model Monitoring", "startTime": "13:00", "endTime": "17:00", "description": "Bewaking modelperformance en drift" },
+      { "day": "wednesday", "title": "Feature Store Beheer", "startTime": "09:00", "endTime": "12:00", "description": "Ontwikkeling en beheer feature store" },
+      { "day": "wednesday", "title": "Architectuur Overleg", "startTime": "13:00", "endTime": "15:00", "description": "ML architectuur afstemming" },
+      { "day": "thursday", "title": "Hertraining Pipelines", "startTime": "09:00", "endTime": "12:00", "description": "Automatische hertraining opzetten" },
+      { "day": "thursday", "title": "Kennissessie", "startTime": "14:00", "endTime": "16:00", "description": "ML Engineering best practices" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "16:00", "description": "Demo en retrospective" }
+    ],
+    "workDistribution": [
+      { "category": "MLOps & Deployment", "percentage": 35 },
+      { "category": "Pipeline Ontwikkeling", "percentage": 25 },
+      { "category": "Model Monitoring", "percentage": 20 },
+      { "category": "Data Scientist Samenwerking", "percentage": 12 },
+      { "category": "Documentatie", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "MLflow / Kubeflow", "level": 4, "description": "ML lifecycle management" },
+      { "skillName": "Python (PyTorch, scikit-learn)", "level": 5, "description": "ML model ontwikkeling" },
+      { "skillName": "Kubernetes / Docker", "level": 4, "description": "Container­gebaseerde ML deployment" },
+      { "skillName": "Feature Engineering", "level": 4, "description": "Feature store design en beheer" },
+      { "skillName": "Model Monitoring (Evidently)", "level": 3, "description": "Detectie van data drift" }
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Chief Information Security Officer",
+    "department": "Defensie Cyber Commando",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 12",
+    "functionDomain": "Security",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als CISO van de Defensie ICT Organisatie ben je eindverantwoordelijk voor de informatiebeveiliging van alle defensie-IT-systemen. Je stelt de security­strategie vast, stuurt het security­team aan en adviseert de Secretaris-Generaal en de CIO. Je vertegenwoordigt Defensie in nationale en internationale security­fora.",
+    "dailyActivities": "Je voert strategische gesprekken met het defensie-topmanagement en externe partners over cyberdreigingen en -beleid. Je bewaakt de uitvoering van het security­programma, besluit over grote security-investeringen en communiceert over incidenten.",
+    "contactPerson": {
+      "name": "Prof. dr. Carla Bergman",
+      "email": "c.bergman@defensie.nl",
+      "phone": "070-316 4032"
+    },
+    "weeklyCalendar": [
+      { "day": "monday", "title": "CISO Briefing", "startTime": "08:30", "endTime": "09:30", "description": "Dreigings­briefing en incidenten update" },
+      { "day": "monday", "title": "Security Stuurgroep", "startTime": "10:00", "endTime": "12:00", "description": "Wekelijkse security stuurgroep" },
+      { "day": "monday", "title": "Strategie Uitwerking", "startTime": "14:00", "endTime": "17:00", "description": "Ontwikkelen security strategie" },
+      { "day": "tuesday", "title": "CIO Overleg", "startTime": "09:00", "endTime": "10:30", "description": "Afstemming met CIO" },
+      { "day": "tuesday", "title": "Team Management", "startTime": "11:00", "endTime": "13:00", "description": "Security team aansturen" },
+      { "day": "tuesday", "title": "Investeringsbeslissingen", "startTime": "14:00", "endTime": "17:00", "description": "Security budget en investeringen" },
+      { "day": "wednesday", "title": "Extern Security Forum", "startTime": "09:00", "endTime": "12:00", "description": "NCSC en NAVO security overleg" },
+      { "day": "wednesday", "title": "Compliance Review", "startTime": "13:00", "endTime": "16:00", "description": "Review security compliance status" },
+      { "day": "thursday", "title": "Management Presentatie", "startTime": "10:00", "endTime": "12:00", "description": "Security rapportage aan directie" },
+      { "day": "thursday", "title": "Incident Review", "startTime": "14:00", "endTime": "16:00", "description": "Review van security incidenten" },
+      { "day": "friday", "title": "Strategische Reflectie", "startTime": "09:00", "endTime": "12:00", "description": "Terugblik en strategische planning" }
+    ],
+    "workDistribution": [
+      { "category": "Strategisch Leiderschap", "percentage": 35 },
+      { "category": "Stakeholder­management", "percentage": 25 },
+      { "category": "Team Management", "percentage": 20 },
+      { "category": "Compliance & Governance", "percentage": 12 },
+      { "category": "Externe Vertegenwoordiging", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Cyber Security Strategie", "level": 5, "description": "Organisatie­brede security koers" },
+      { "skillName": "Risk Management", "level": 5, "description": "Strategische risico­beoordeling" },
+      { "skillName": "Leiderschap & Communicatie", "level": 5, "description": "C-suite niveau communicatie" },
+      { "skillName": "Compliance (BIO / NEN 7510)", "level": 4, "description": "Overheidsbrede security normen" },
+      { "skillName": "Incident Crisis Management", "level": 4, "description": "Crisisbeheersing bij grote incidenten" }
     ]
   }
 ]
