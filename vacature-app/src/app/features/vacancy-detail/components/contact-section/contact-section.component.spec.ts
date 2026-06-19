@@ -47,8 +47,9 @@ describe('ContactSectionComponent', () => {
     expect(el.querySelector('.contact--dark')).toBeTruthy();
   });
 
-  it('should compute initials from name', () => {
-    expect(fixture.componentInstance.initials()).toBe('MD');
+  it('should compute initials from the first two name words', () => {
+    // "Kapitein Mark de Vries" -> "K" + "M"
+    expect(fixture.componentInstance.initials()).toBe('KM');
   });
 
   it('should render a mailto link for the email', () => {

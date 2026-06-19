@@ -14,7 +14,7 @@ describe('AuthService', () => {
   });
 
   it('should start unauthenticated', () => {
-    expect(service.isAuthenticated()).toBeFalse();
+    expect(service.isAuthenticated()).toBe(false);
     expect(service.userProfile()).toBeNull();
   });
 

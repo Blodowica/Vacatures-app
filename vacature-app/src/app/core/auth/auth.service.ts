@@ -1,6 +1,6 @@
-import { Injectable, signal, computed, inject, PLATFORM_ID } from '@angular/core';
+import { Injectable, signal, computed, inject, InjectionToken, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import Keycloak from 'keycloak-js';
+import Keycloak, { KeycloakConfig } from 'keycloak-js';
 import { environment } from '../../../environments/environment';
 
 export interface UserProfile {
@@ -12,9 +12,19 @@ export interface UserProfile {
   roles: string[];
 }
 
+/**
+ * Factory for creating the Keycloak adapter. Defaults to the real adapter; tests
+ * override this token to inject a deterministic fake (avoids module mocking).
+ */
+export const KEYCLOAK_FACTORY = new InjectionToken<(config: KeycloakConfig) => Keycloak>(
+  'KEYCLOAK_FACTORY',
+  { providedIn: 'root', factory: () => (config: KeycloakConfig) => new Keycloak(config) }
+);
+
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private readonly platformId = inject(PLATFORM_ID);
+  private readonly createKeycloak = inject(KEYCLOAK_FACTORY);
   private keycloak!: Keycloak;
 
   readonly isAuthenticated = signal(false);
@@ -36,7 +46,7 @@ export class AuthService {
   async init(): Promise<void> {
     if (!isPlatformBrowser(this.platformId)) return;
 
-    this.keycloak = new Keycloak(environment.keycloak);
+    this.keycloak = this.createKeycloak(environment.keycloak);
 
     try {
       const authenticated = await this.keycloak.init({

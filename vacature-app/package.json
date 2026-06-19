@@ -9,6 +9,8 @@
     "build:prod": "node scripts/generate-env.js && ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:ci": "ng test --watch=false",
+    "test:coverage": "ng test --watch=false --coverage",
     "serve:ssr:vacature-app": "node dist/vacature-app/server/server.mjs"
   },
   "private": true,

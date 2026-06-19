@@ -10,7 +10,6 @@ const mockVacancy: Vacancy = {
   department: 'IT Afdeling',
   personnelType: 'military',
   rank: 'Sergeant',
-  scale: null,
   functionDomain: 'Software Development',
   locations: ['Den Haag'],
   roleDescription: 'Test rol beschrijving',
@@ -18,6 +17,7 @@ const mockVacancy: Vacancy = {
   weeklyCalendar: [],
   workDistribution: [],
   skills: [],
+  contactPerson: { name: 'Test Contact', email: 'test@mindef.nl', phone: '0600000000' },
 };
 
 describe('VacancyCardComponent', () => {
