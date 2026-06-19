@@ -76,8 +76,8 @@ export class FilterService {
   private applyFilters(vacancies: Vacancy[], filter: VacancyFilter): Vacancy[] {
     return vacancies.filter(v => {
       if (filter.personnelType !== 'all' && v.personnelType !== filter.personnelType) return false;
-      if (filter.rank && v.rank !== filter.rank) return false;
-      if (filter.scale && v.scale !== filter.scale) return false;
+      if (filter.rank && v.personnelType === 'military' && v.rank !== filter.rank) return false;
+      if (filter.scale && v.personnelType === 'civilian' && v.scale !== filter.scale) return false;
       if (filter.functionDomain.length > 0 && !filter.functionDomain.includes(v.functionDomain)) return false;
       if (filter.locations.length > 0 && !filter.locations.some(l => v.locations.includes(l))) return false;
       if (filter.searchQuery) {
