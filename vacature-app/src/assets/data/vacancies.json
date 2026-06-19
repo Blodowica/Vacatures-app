@@ -1,0 +1,343 @@
+[
+  {
+    "id": "1",
+    "title": "Senior Software Developer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Sergeant",
+    "scale": null,
+    "functionDomain": "Software Development",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Senior Software Developer draag je bij aan de ontwikkeling van kritieke defensiesoftware. Je bent verantwoordelijk voor het ontwerpen, bouwen en onderhouden van complexe applicaties die worden ingezet door operationele eenheden. Je werkt nauw samen met product owners, architecten en andere developers in een modern agile team.",
+    "dailyActivities": "Je dag begint met een dagelijkse stand-up. Daarna werk je aan feature development, code reviews en technische documentatie. Je overlegt regelmatig met product owners over requirements en met architecten over technische oplossingen. Je draagt actief bij aan het technisch ontwerp en ondersteunt junior collega's.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Sprint Planning", "startTime": "09:00", "endTime": "10:30", "description": "Wekelijkse sprint planning met het team" },
+      { "day": "monday", "title": "Feature Development", "startTime": "10:30", "endTime": "17:00", "description": "Ontwikkeling van nieuwe features" },
+      { "day": "tuesday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Code Review", "startTime": "09:30", "endTime": "11:00", "description": "Review van pull requests" },
+      { "day": "tuesday", "title": "Feature Development", "startTime": "11:00", "endTime": "17:00", "description": "Feature implementatie" },
+      { "day": "wednesday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "Architectuur Overleg", "startTime": "10:00", "endTime": "12:00", "description": "Technische architectuurbespreking" },
+      { "day": "wednesday", "title": "Feature Development", "startTime": "13:00", "endTime": "17:00", "description": "Implementatie nieuwe functionaliteit" },
+      { "day": "thursday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Testing & QA", "startTime": "09:30", "endTime": "12:00", "description": "Testen van nieuwe functionaliteit" },
+      { "day": "thursday", "title": "Technische Documentatie", "startTime": "13:00", "endTime": "15:00", "description": "Documentatie bijwerken" },
+      { "day": "thursday", "title": "Feature Development", "startTime": "15:00", "endTime": "17:00", "description": "Afronden features" },
+      { "day": "friday", "title": "Daily Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "15:30", "description": "Presentatie sprint resultaten" },
+      { "day": "friday", "title": "Retrospective", "startTime": "15:30", "endTime": "16:30", "description": "Team retrospective" }
+    ],
+    "workDistribution": [
+      { "category": "Feature Development", "percentage": 45 },
+      { "category": "Code Reviews", "percentage": 15 },
+      { "category": "Overleg & Afstemming", "percentage": 20 },
+      { "category": "Testing & QA", "percentage": 12 },
+      { "category": "Documentatie", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Angular / TypeScript", "level": 4, "description": "Diepgaande kennis van Angular en TypeScript" },
+      { "skillName": "Java / Spring Boot", "level": 4, "description": "Backend ontwikkeling in Java" },
+      { "skillName": "CI/CD & DevOps", "level": 3, "description": "Kennis van Jenkins en GitLab CI" },
+      { "skillName": "Docker & Kubernetes", "level": 3, "description": "Containerisatie en orchestratie" },
+      { "skillName": "Agile / Scrum", "level": 4, "description": "Ervaring met agile werken" }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "DevOps Engineer",
+    "department": "Commando Landstrijdkrachten",
+    "personnelType": "military",
+    "rank": "Korporaal",
+    "scale": null,
+    "functionDomain": "DevOps",
+    "locations": ["Breda", "Den Haag"],
+    "roleDescription": "Als DevOps Engineer bij het Commando Landstrijdkrachten ben je verantwoordelijk voor het beheren en optimaliseren van de CI/CD pipelines en cloudinfrastructuur. Je zorgt ervoor dat software snel, veilig en betrouwbaar kan worden uitgerold naar productieomgevingen. Je werkt nauw samen met development- en securityteams.",
+    "dailyActivities": "Je bewaakt de stabiliteit van de pipeline-infrastructuur, lost incidenten op en implementeert automatiseringsoplossingen. Je helpt developers met deployment vraagstukken en configureert monitoring. Je draagt bij aan de transitie naar cloud-native architecturen.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Infra Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Status van systemen en openstaande incidenten" },
+      { "day": "monday", "title": "Pipeline Onderhoud", "startTime": "09:00", "endTime": "12:00", "description": "Optimalisatie CI/CD pipelines" },
+      { "day": "monday", "title": "Cloud Configuratie", "startTime": "13:00", "endTime": "17:00", "description": "Kubernetes cluster beheer" },
+      { "day": "tuesday", "title": "Infra Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Incident Analyse", "startTime": "09:00", "endTime": "11:00", "description": "Analyse en oplossing van incidenten" },
+      { "day": "tuesday", "title": "Automatisering", "startTime": "11:00", "endTime": "17:00", "description": "Schrijven van Ansible/Terraform scripts" },
+      { "day": "wednesday", "title": "Infra Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "Dev Samenwerking", "startTime": "09:00", "endTime": "12:00", "description": "Ondersteuning development teams" },
+      { "day": "wednesday", "title": "Monitoring & Alerting", "startTime": "13:00", "endTime": "17:00", "description": "Grafana/Prometheus configuratie" },
+      { "day": "thursday", "title": "Infra Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Security Scan", "startTime": "09:00", "endTime": "11:00", "description": "Infrastructuur security scan" },
+      { "day": "thursday", "title": "Documentatie", "startTime": "11:00", "endTime": "13:00", "description": "Technische runbooks bijwerken" },
+      { "day": "thursday", "title": "Pipeline Development", "startTime": "13:00", "endTime": "17:00", "description": "Nieuwe pipeline features" },
+      { "day": "friday", "title": "Infra Stand-up", "startTime": "08:30", "endTime": "09:00", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Capacity Planning", "startTime": "09:00", "endTime": "11:00", "description": "Analyse capaciteitsbehoeften" },
+      { "day": "friday", "title": "Retrospective", "startTime": "15:00", "endTime": "16:30", "description": "Team terugblik" }
+    ],
+    "workDistribution": [
+      { "category": "Pipeline & Automatisering", "percentage": 35 },
+      { "category": "Incidentbeheer", "percentage": 20 },
+      { "category": "Cloud Infrastructuur", "percentage": 25 },
+      { "category": "Documentatie", "percentage": 10 },
+      { "category": "Samenwerking", "percentage": 10 }
+    ],
+    "skills": [
+      { "skillName": "Kubernetes / Docker", "level": 4, "description": "Container orchestratie" },
+      { "skillName": "Terraform / Ansible", "level": 4, "description": "Infrastructure as Code" },
+      { "skillName": "CI/CD (GitLab, Jenkins)", "level": 5, "description": "Pipeline design en beheer" },
+      { "skillName": "Linux / Bash", "level": 4, "description": "Systeembeheer en scripting" },
+      { "skillName": "Monitoring (Grafana)", "level": 3, "description": "Observability stack" }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Cybersecurity Analyst",
+    "department": "Defensie Cyber Commando",
+    "personnelType": "military",
+    "rank": "Adjudant",
+    "scale": null,
+    "functionDomain": "Security",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Cybersecurity Analyst bij het Defensie Cyber Commando analyseer en bewaak je de digitale veiligheid van defensiesystemen. Je detecteert dreigingen, voert vulnerability assessments uit en adviseert over beveiligingsmaatregelen. Je werkt in een operationeel Security Operations Center (SOC).",
+    "dailyActivities": "Je analyseert SIEM-alerts en onderzoekt potentiële bedreigingen. Je voert regelmatig penetration tests en vulnerability scans uit. Je stelt dreigingsrapporten op voor het management en adviseert over beveiligingsbeleid. Je neemt deel aan threat intelligence-sessies.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "SOC Briefing", "startTime": "08:00", "endTime": "09:00", "description": "Overdracht en status bekende dreigingen" },
+      { "day": "monday", "title": "SIEM Analyse", "startTime": "09:00", "endTime": "12:00", "description": "Analyse van security alerts" },
+      { "day": "monday", "title": "Threat Hunting", "startTime": "13:00", "endTime": "17:00", "description": "Proactief zoeken naar bedreigingen" },
+      { "day": "tuesday", "title": "SOC Briefing", "startTime": "08:00", "endTime": "08:30", "description": "Dagelijkse overdracht" },
+      { "day": "tuesday", "title": "Vulnerability Assessment", "startTime": "09:00", "endTime": "12:00", "description": "Kwetsbaarheden scannen en analyseren" },
+      { "day": "tuesday", "title": "Rapport Schrijven", "startTime": "13:00", "endTime": "15:00", "description": "Security rapportage voor management" },
+      { "day": "tuesday", "title": "Incident Response", "startTime": "15:00", "endTime": "17:00", "description": "Afhandelen van beveiligingsincidenten" },
+      { "day": "wednesday", "title": "SOC Briefing", "startTime": "08:00", "endTime": "08:30", "description": "Dagelijkse overdracht" },
+      { "day": "wednesday", "title": "Penetration Testing", "startTime": "09:00", "endTime": "17:00", "description": "Gecontroleerde penetratie tests" },
+      { "day": "thursday", "title": "SOC Briefing", "startTime": "08:00", "endTime": "08:30", "description": "Dagelijkse overdracht" },
+      { "day": "thursday", "title": "Threat Intelligence", "startTime": "09:00", "endTime": "11:00", "description": "Analyse van dreigingsinformatie" },
+      { "day": "thursday", "title": "SIEM Tuning", "startTime": "11:00", "endTime": "13:00", "description": "Verfijnen van detection rules" },
+      { "day": "thursday", "title": "Security Advies", "startTime": "14:00", "endTime": "17:00", "description": "Advisering aan projectteams" },
+      { "day": "friday", "title": "SOC Briefing", "startTime": "08:00", "endTime": "08:30", "description": "Dagelijkse overdracht" },
+      { "day": "friday", "title": "Kennissessie", "startTime": "09:00", "endTime": "11:00", "description": "Teamtraining en kennisdeling" },
+      { "day": "friday", "title": "Weekrapportage", "startTime": "14:00", "endTime": "16:00", "description": "Wekelijkse security rapportage" }
+    ],
+    "workDistribution": [
+      { "category": "Monitoring & Analyse", "percentage": 35 },
+      { "category": "Vulnerability Assessment", "percentage": 20 },
+      { "category": "Incident Response", "percentage": 20 },
+      { "category": "Rapportage & Advies", "percentage": 15 },
+      { "category": "Training & Ontwikkeling", "percentage": 10 }
+    ],
+    "skills": [
+      { "skillName": "SIEM (Splunk/Sentinel)", "level": 5, "description": "Security information and event management" },
+      { "skillName": "Penetration Testing", "level": 4, "description": "Gecontroleerde beveiligingstests" },
+      { "skillName": "Netwerk Beveiliging", "level": 4, "description": "Firewalls, IDS/IPS, VPN" },
+      { "skillName": "Incident Response", "level": 4, "description": "Afhandeling van beveiligingsincidenten" },
+      { "skillName": "Threat Intelligence", "level": 3, "description": "Analyse van dreigingsinformatie" }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Junior Software Developer",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "military",
+    "rank": "Soldaat 1e Klasse",
+    "scale": null,
+    "functionDomain": "Software Development",
+    "locations": ["Apeldoorn"],
+    "roleDescription": "Als Junior Software Developer maak je deel uit van een ervaren team dat werkt aan interne defensieapplicaties. Je leert het vak in de praktijk terwijl je bijdraagt aan echte projecten. Je wordt begeleid door senior developers en krijgt ruimte om te groeien.",
+    "dailyActivities": "Je werkt aan bugfixes en kleinere features onder begeleiding van een senior developer. Je neemt deel aan code reviews om te leren van je collega's. Je volgt regelmatig technische trainingen en zelfstudie om je vaardigheden te ontwikkelen.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "monday", "title": "Begeleide Ontwikkeling", "startTime": "09:30", "endTime": "12:00", "description": "Feature development met mentorbegeleiding" },
+      { "day": "monday", "title": "Code Review Sessie", "startTime": "13:00", "endTime": "14:00", "description": "Leren van code reviews" },
+      { "day": "monday", "title": "Zelfstudie", "startTime": "14:00", "endTime": "17:00", "description": "Online cursussen en documentatie" },
+      { "day": "tuesday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "tuesday", "title": "Bugfixes", "startTime": "09:30", "endTime": "12:00", "description": "Oplossen van gerapporteerde bugs" },
+      { "day": "tuesday", "title": "Unit Testing", "startTime": "13:00", "endTime": "17:00", "description": "Schrijven van unit tests" },
+      { "day": "wednesday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "wednesday", "title": "Feature Ontwikkeling", "startTime": "09:30", "endTime": "17:00", "description": "Implementatie van een user story" },
+      { "day": "thursday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "thursday", "title": "Tech Talk", "startTime": "10:00", "endTime": "11:30", "description": "Wekelijkse kennissessie" },
+      { "day": "thursday", "title": "Feature Ontwikkeling", "startTime": "11:30", "endTime": "17:00", "description": "Verdere implementatie" },
+      { "day": "friday", "title": "Team Stand-up", "startTime": "09:00", "endTime": "09:15", "description": "Dagelijkse afstemming" },
+      { "day": "friday", "title": "Demo Voorbereiding", "startTime": "10:00", "endTime": "12:00", "description": "Voorbereiding sprint demo" },
+      { "day": "friday", "title": "Sprint Review & Retro", "startTime": "14:00", "endTime": "16:30", "description": "Sprint afsluiting" }
+    ],
+    "workDistribution": [
+      { "category": "Feature Development", "percentage": 40 },
+      { "category": "Bugfixes", "percentage": 20 },
+      { "category": "Zelfstudie & Training", "percentage": 20 },
+      { "category": "Testing", "percentage": 12 },
+      { "category": "Overleg", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "JavaScript / TypeScript", "level": 2, "description": "Basis webontwikkeling" },
+      { "skillName": "Angular", "level": 2, "description": "Frontend framework" },
+      { "skillName": "Java Basis", "level": 2, "description": "Objectgeoriënteerd programmeren" },
+      { "skillName": "Git & Versiebeheer", "level": 3, "description": "Samenwerken met git" },
+      { "skillName": "Agile / Scrum", "level": 2, "description": "Agile werkwijze" }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Data Analyst",
+    "department": "Directie Financiën & Control",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 9",
+    "functionDomain": "Data",
+    "locations": ["Amsterdam", "Den Haag"],
+    "roleDescription": "Als Data Analyst bij de Directie Financiën & Control verwerk en analyseer je grote datasets om waardevolle inzichten te genereren voor besluitvormers. Je werkt met financiële en operationele data om trends te identificeren, rapportages te maken en dashboards te ontwikkelen die stuurinformatie bieden.",
+    "dailyActivities": "Je verwerkt dagelijks datafeeds, controleert datakwaliteit en bouwt analytische rapporten. Je overlegt met stakeholders over informatiebehoefte en vertaalt die naar concrete analyses. Je presenteert bevindingen aan management en adviseurs.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Data Intake", "startTime": "09:00", "endTime": "10:00", "description": "Verwerken van nieuwe datafeeds" },
+      { "day": "monday", "title": "Dashboard Onderhoud", "startTime": "10:00", "endTime": "12:00", "description": "Bijwerken Power BI dashboards" },
+      { "day": "monday", "title": "Analyse & Modellering", "startTime": "13:00", "endTime": "17:00", "description": "Statistische analyses uitvoeren" },
+      { "day": "tuesday", "title": "Stakeholder Overleg", "startTime": "09:00", "endTime": "10:30", "description": "Bespreken van informatiebehoefte" },
+      { "day": "tuesday", "title": "SQL Queries & ETL", "startTime": "10:30", "endTime": "12:00", "description": "Dataextractie en transformatie" },
+      { "day": "tuesday", "title": "Rapportage Schrijven", "startTime": "13:00", "endTime": "17:00", "description": "Analyserapport opstellen" },
+      { "day": "wednesday", "title": "Datakwaliteit Check", "startTime": "09:00", "endTime": "10:30", "description": "Validatie van data-integriteit" },
+      { "day": "wednesday", "title": "Analyse Uitvoering", "startTime": "10:30", "endTime": "12:00", "description": "Verdiepende analyses" },
+      { "day": "wednesday", "title": "Python / R Scripts", "startTime": "13:00", "endTime": "17:00", "description": "Ontwikkelen van analysetools" },
+      { "day": "thursday", "title": "Management Presentatie", "startTime": "10:00", "endTime": "11:30", "description": "Presentatie van bevindingen" },
+      { "day": "thursday", "title": "Analyse & Validatie", "startTime": "12:00", "endTime": "17:00", "description": "Verdere analyses en peer review" },
+      { "day": "friday", "title": "Weekrapportage", "startTime": "09:00", "endTime": "11:00", "description": "Opstellen wekelijkse KPI rapportage" },
+      { "day": "friday", "title": "Kennisdeling", "startTime": "13:00", "endTime": "15:00", "description": "Teamoverleg en kennisupdates" }
+    ],
+    "workDistribution": [
+      { "category": "Data-analyse", "percentage": 40 },
+      { "category": "Rapportage & Visualisatie", "percentage": 25 },
+      { "category": "Data Engineering", "percentage": 15 },
+      { "category": "Stakeholdermanagement", "percentage": 12 },
+      { "category": "Documentatie", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "SQL / Database", "level": 4, "description": "Complexe queries en database-design" },
+      { "skillName": "Power BI / Tableau", "level": 4, "description": "Business intelligence en visualisatie" },
+      { "skillName": "Python (pandas, numpy)", "level": 3, "description": "Data science scripting" },
+      { "skillName": "Statistiek & Analyse", "level": 4, "description": "Statistische methoden en modellen" },
+      { "skillName": "Excel / Data Modellering", "level": 5, "description": "Geavanceerde Excel-vaardigheden" }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Agile Coach",
+    "department": "Personeel & Organisatie",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 10",
+    "functionDomain": "Agile",
+    "locations": ["Utrecht"],
+    "roleDescription": "Als Agile Coach begeleid je teams en organisaties in de transitie naar agile werken. Je coacht Scrum teams, faciliteert workshops en ondersteunt management bij de organisatieontwikkeling. Je bent een sparringpartner voor Product Owners en Team Leads en helpt obstakels weg te nemen.",
+    "dailyActivities": "Je faciliteert standups, retrospectives en planningsessies. Je coacht individuen en teams in agile mindset en practices. Je geeft trainingen en workshops over Scrum, Kanban en Lean. Je adviseert management over agile transformatie.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Team A Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Faciliteren dagelijkse stand-up team A" },
+      { "day": "monday", "title": "Team B Stand-up", "startTime": "10:00", "endTime": "10:30", "description": "Faciliteren dagelijkse stand-up team B" },
+      { "day": "monday", "title": "1-op-1 Coaching", "startTime": "11:00", "endTime": "13:00", "description": "Individuele coachingsgesprekken" },
+      { "day": "monday", "title": "Management Overleg", "startTime": "14:00", "endTime": "15:30", "description": "Transformatievoortgang met management" },
+      { "day": "tuesday", "title": "Team A Stand-up", "startTime": "09:00", "endTime": "09:30", "description": "Dagelijkse stand-up" },
+      { "day": "tuesday", "title": "Agile Workshop", "startTime": "10:00", "endTime": "12:00", "description": "Training voor nieuwe teams" },
+      { "day": "tuesday", "title": "Retrospective Facilitatie", "startTime": "14:00", "endTime": "16:00", "description": "Retrospective met team C" },
+      { "day": "wednesday", "title": "Team Observatie", "startTime": "09:00", "endTime": "11:00", "description": "Observeren teamdynamiek" },
+      { "day": "wednesday", "title": "Coaching Gesprek PO", "startTime": "11:00", "endTime": "12:00", "description": "Coaching product owner" },
+      { "day": "wednesday", "title": "Kennissessie", "startTime": "14:00", "endTime": "16:00", "description": "Agile community of practice" },
+      { "day": "thursday", "title": "Sprint Planning Facilitatie", "startTime": "09:00", "endTime": "11:00", "description": "Faciliteren sprint planning" },
+      { "day": "thursday", "title": "Impediment Oplossing", "startTime": "11:00", "endTime": "13:00", "description": "Wegnemen van obstakels" },
+      { "day": "thursday", "title": "Documentatie & Reflectie", "startTime": "14:00", "endTime": "17:00", "description": "Voortgang vastleggen en reflecteren" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "09:00", "endTime": "11:00", "description": "Faciliteren sprint review" },
+      { "day": "friday", "title": "Transformatieplan Update", "startTime": "13:00", "endTime": "15:00", "description": "Bijwerken transformatieroadmap" }
+    ],
+    "workDistribution": [
+      { "category": "Team Coaching", "percentage": 35 },
+      { "category": "Faciliteren Ceremonies", "percentage": 25 },
+      { "category": "Management Advies", "percentage": 20 },
+      { "category": "Training & Workshops", "percentage": 15 },
+      { "category": "Documentatie", "percentage": 5 }
+    ],
+    "skills": [
+      { "skillName": "Scrum / Kanban", "level": 5, "description": "Agile frameworks en methodieken" },
+      { "skillName": "Coaching & Facilitatie", "level": 5, "description": "Coachingsvaardigheden en groepsdynamica" },
+      { "skillName": "Verandermanagement", "level": 4, "description": "Organisatieverandering begeleiden" },
+      { "skillName": "Communicatie", "level": 5, "description": "Effectief communiceren op alle niveaus" },
+      { "skillName": "Conflictmanagement", "level": 3, "description": "Conflicten herkennen en oplossen" }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Solution Architect",
+    "department": "Defensie ICT Organisatie",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 11",
+    "functionDomain": "Architecture",
+    "locations": ["Den Haag"],
+    "roleDescription": "Als Solution Architect ontwerp je technische oplossingsarchitecturen voor complexe defensie-IT-projecten. Je vertaalt bedrijfsbehoeften naar robuuste, schaalbare en veilige technische architecturen. Je bent verantwoordelijk voor het bewaken van architectuurprincipes en het begeleiden van development teams bij de implementatie.",
+    "dailyActivities": "Je stelt architectuurdocumenten op en presenteert die aan stakeholders. Je voert technische reviews uit op designs en implementaties. Je adviseert project- en programmamanagement over technische keuzes en risico's. Je werkt nauw samen met security architects en enterprise architecten.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Architecture Board", "startTime": "09:00", "endTime": "11:00", "description": "Wekelijks architectuuroverleg" },
+      { "day": "monday", "title": "Design Review", "startTime": "11:00", "endTime": "13:00", "description": "Review van technische designs" },
+      { "day": "monday", "title": "Architectuur Document", "startTime": "14:00", "endTime": "17:00", "description": "Opstellen architectuurdocumenten" },
+      { "day": "tuesday", "title": "Stakeholder Overleg", "startTime": "09:00", "endTime": "11:00", "description": "Requirements afstemming" },
+      { "day": "tuesday", "title": "Technisch Advies", "startTime": "11:00", "endTime": "13:00", "description": "Adviesgesprekken met teams" },
+      { "day": "tuesday", "title": "POC / Onderzoek", "startTime": "14:00", "endTime": "17:00", "description": "Proof of concept validatie" },
+      { "day": "wednesday", "title": "Enterprise Afstemming", "startTime": "09:00", "endTime": "10:30", "description": "Afstemming met enterprise architectuur" },
+      { "day": "wednesday", "title": "Solution Design", "startTime": "10:30", "endTime": "12:00", "description": "Uitwerken technische architectuur" },
+      { "day": "wednesday", "title": "Team Begeleiding", "startTime": "13:00", "endTime": "17:00", "description": "Architectuurbegeleiding van teams" },
+      { "day": "thursday", "title": "Risico Analyse", "startTime": "09:00", "endTime": "11:00", "description": "Technische risicobeoordeling" },
+      { "day": "thursday", "title": "Architectuur Review", "startTime": "11:00", "endTime": "13:00", "description": "Review ingebrachte oplossingen" },
+      { "day": "thursday", "title": "Presentatie Voorbereiding", "startTime": "14:00", "endTime": "17:00", "description": "Voorbereiding managementpresentaties" },
+      { "day": "friday", "title": "Management Presentatie", "startTime": "10:00", "endTime": "12:00", "description": "Presentatie architectuurkeuzes" },
+      { "day": "friday", "title": "Kennis & Innovatie", "startTime": "13:00", "endTime": "16:00", "description": "Volgen trends en innovaties" }
+    ],
+    "workDistribution": [
+      { "category": "Architectuur Design", "percentage": 35 },
+      { "category": "Technisch Advies", "percentage": 25 },
+      { "category": "Reviews & Validatie", "percentage": 20 },
+      { "category": "Stakeholdermanagement", "percentage": 15 },
+      { "category": "Kennisopbouw", "percentage": 5 }
+    ],
+    "skills": [
+      { "skillName": "Enterprise Architectuur", "level": 5, "description": "TOGAF en ArchiMate" },
+      { "skillName": "Cloud Architectuur", "level": 4, "description": "Azure / AWS architectuurpatronen" },
+      { "skillName": "Security by Design", "level": 4, "description": "Veiligheid in architectuurontwerp" },
+      { "skillName": "API / Microservices", "level": 4, "description": "Gedistribueerde systeemarchitectuur" },
+      { "skillName": "Stakeholdermanagement", "level": 4, "description": "Communicatie op strategisch niveau" }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Data Scientist",
+    "department": "Directie Strategie & Kennis",
+    "personnelType": "civilian",
+    "rank": null,
+    "scale": "Schaal 12",
+    "functionDomain": "Data",
+    "locations": ["Den Haag", "Amsterdam"],
+    "roleDescription": "Als Data Scientist bij de Directie Strategie & Kennis ontwikkel je geavanceerde machine learning-modellen en AI-toepassingen die strategische besluitvorming ondersteunen. Je analyseert complexe datasets, bouwt voorspellende modellen en vertaalt analytische inzichten naar concrete aanbevelingen voor beleidsmakers.",
+    "dailyActivities": "Je werkt aan het bouwen en valideren van ML-modellen. Je voert exploratieve data-analyse uit op nieuwe datasets. Je overlegt met domeinexperts over de interpretatiedosier van modellen en vertaalt resultaten naar begrijpelijk inzicht. Je presenteert bevindingen aan senior management en beleidsadviseurs.",
+    "weeklyCalendar": [
+      { "day": "monday", "title": "Data Exploratie", "startTime": "09:00", "endTime": "12:00", "description": "Verkenning van nieuwe datasets" },
+      { "day": "monday", "title": "Model Development", "startTime": "13:00", "endTime": "17:00", "description": "Bouwen ML-modellen in Python" },
+      { "day": "tuesday", "title": "Domeinexpert Sessie", "startTime": "09:00", "endTime": "11:00", "description": "Afstemming met inhoudelijk experts" },
+      { "day": "tuesday", "title": "Model Training & Validatie", "startTime": "11:00", "endTime": "13:00", "description": "Trainen en evalueren van modellen" },
+      { "day": "tuesday", "title": "Experiment Tracking", "startTime": "14:00", "endTime": "17:00", "description": "MLflow experiment management" },
+      { "day": "wednesday", "title": "Feature Engineering", "startTime": "09:00", "endTime": "12:00", "description": "Variabelen ontwerpen voor modellen" },
+      { "day": "wednesday", "title": "Model Interpretatie", "startTime": "13:00", "endTime": "15:00", "description": "SHAP en explainability analyse" },
+      { "day": "wednesday", "title": "Tech Discussie", "startTime": "15:00", "endTime": "17:00", "description": "Kennissessie data science team" },
+      { "day": "thursday", "title": "Model Deployment", "startTime": "09:00", "endTime": "11:00", "description": "MLOps en model deployment" },
+      { "day": "thursday", "title": "Rapport & Presentatie", "startTime": "11:00", "endTime": "13:00", "description": "Bevindingen rapporteren" },
+      { "day": "thursday", "title": "Beleidsadvies Sessie", "startTime": "14:00", "endTime": "16:00", "description": "Advies op basis van modeluitkomsten" },
+      { "day": "friday", "title": "Onderzoek & Literatuur", "startTime": "09:00", "endTime": "11:00", "description": "Bijhouden wetenschappelijke literatuur" },
+      { "day": "friday", "title": "Sprint Review", "startTime": "14:00", "endTime": "16:00", "description": "Terugkoppeling sprint resultaten" }
+    ],
+    "workDistribution": [
+      { "category": "Model Development", "percentage": 40 },
+      { "category": "Data Engineering", "percentage": 20 },
+      { "category": "Analyse & Onderzoek", "percentage": 20 },
+      { "category": "Stakeholder Communicatie", "percentage": 12 },
+      { "category": "MLOps & Deployment", "percentage": 8 }
+    ],
+    "skills": [
+      { "skillName": "Python (scikit-learn, PyTorch)", "level": 5, "description": "Machine learning en deep learning" },
+      { "skillName": "Statistiek & Wiskunde", "level": 5, "description": "Statistische modellering" },
+      { "skillName": "SQL / Big Data", "level": 4, "description": "Grootschalige dataverwerking" },
+      { "skillName": "MLOps (MLflow, DVC)", "level": 3, "description": "Machine learning lifecycle management" },
+      { "skillName": "Communicatie & Advies", "level": 4, "description": "Bevindingen vertalen naar beleid" }
+    ]
+  }
+]
