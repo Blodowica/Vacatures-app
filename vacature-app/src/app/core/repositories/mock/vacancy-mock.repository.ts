@@ -6,7 +6,10 @@ import vacanciesData from '../../../../assets/data/vacancies.json';
 
 @Injectable({ providedIn: 'root' })
 export class VacancyMockRepository implements VacancyRepository {
-  private readonly data: Vacancy[] = vacanciesData as unknown as Vacancy[];
+  private readonly EXCLUDED_IDS = new Set(['6', '11', '25', '29', '32']);
+  private readonly data: Vacancy[] = (vacanciesData as unknown as Vacancy[])
+    .filter(v => !this.EXCLUDED_IDS.has(v.id))
+    .map(v => ({ ...v, title: `${v.title} <<mock>>` }));
 
   getAll(): Observable<Vacancy[]> {
     return of(this.data);

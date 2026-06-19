@@ -2,10 +2,12 @@ import { ApplicationConfig, APP_INITIALIZER, provideBrowserGlobalErrorListeners 
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 import { routes } from './app.routes';
 import { VACANCY_REPOSITORY } from './core/repositories/vacancy.repository';
-import { VacancyMockRepository } from './core/repositories/mock/vacancy-mock.repository';
+import { VacancyApiRepository } from './core/repositories/vacancy-api.repository';
 import { AuthService } from './core/auth/auth.service';
+import { authInterceptor } from './core/interceptors/auth.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -13,7 +15,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withComponentInputBinding()),
     provideClientHydration(withEventReplay()),
     provideAnimationsAsync(),
-    { provide: VACANCY_REPOSITORY, useClass: VacancyMockRepository },
+    provideHttpClient(withFetch(), withInterceptors([authInterceptor])),
+    { provide: VACANCY_REPOSITORY, useClass: VacancyApiRepository },
     {
       provide: APP_INITIALIZER,
       useFactory: (auth: AuthService) => () => auth.init(),
