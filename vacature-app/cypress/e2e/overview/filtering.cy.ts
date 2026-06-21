@@ -47,6 +47,41 @@ describe('Vacancy overview – filtering', () => {
     OverviewPage.cardTitles().should('contain', 'Backend Developer');
   });
 
+  // ---- Rank/scale scoping (from the "Alles" view) -------------------------
+
+  it('shows only military vacancies when only a rank is selected', () => {
+    OverviewPage.selectRank('Sergeant');
+
+    OverviewPage.expectResultCount(2); // mil-1 + mil-3
+    OverviewPage.sectionHeaders().should('have.length', 1);
+    OverviewPage.sectionHeaders().should('contain', 'Militair');
+    cy.contains('[data-cy="vacancy-card-title"]', 'Backend Developer').should('not.exist');
+    cy.contains('[data-cy="vacancy-card-title"]', 'Data Scientist').should('not.exist');
+  });
+
+  it('shows only civilian vacancies when only a scale is selected', () => {
+    OverviewPage.selectScale('Schaal 10');
+
+    OverviewPage.expectResultCount(1); // civ-1
+    OverviewPage.sectionHeaders().should('have.length', 1);
+    OverviewPage.sectionHeaders().should('contain', 'Burgerpersoneel');
+    OverviewPage.cardTitles().should('contain', 'Backend Developer');
+    cy.contains('[data-cy="vacancy-card-title"]', 'Software Engineer Defensie').should('not.exist');
+  });
+
+  it('shows both types, each by its own criterion, when a rank and a scale are selected', () => {
+    OverviewPage.selectRank('Sergeant').selectScale('Schaal 10');
+
+    OverviewPage.expectResultCount(3); // 2 military Sergeants + 1 civilian Schaal 10
+    OverviewPage.sectionHeaders().should('have.length', 2);
+    OverviewPage.cardTitles().should('contain', 'Software Engineer Defensie');
+    OverviewPage.cardTitles().should('contain', 'DevOps Engineer');
+    OverviewPage.cardTitles().should('contain', 'Backend Developer');
+    // Korporaal (mil-2) and Schaal 11/12 are excluded by the respective criteria.
+    cy.contains('[data-cy="vacancy-card-title"]', 'Security Analist').should('not.exist');
+    cy.contains('[data-cy="vacancy-card-title"]', 'Data Scientist').should('not.exist');
+  });
+
   it('filters across both personnel types by function domain', () => {
     OverviewPage.toggleDomain('Software Development');
 

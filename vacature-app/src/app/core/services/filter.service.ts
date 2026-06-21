@@ -74,10 +74,23 @@ export class FilterService {
   }
 
   private applyFilters(vacancies: Vacancy[], filter: VacancyFilter): Vacancy[] {
+    const rankActive = !!filter.rank;
+    const scaleActive = !!filter.scale;
+
     return vacancies.filter(v => {
       if (filter.personnelType !== 'all' && v.personnelType !== filter.personnelType) return false;
-      if (filter.rank && v.personnelType === 'military' && v.rank !== filter.rank) return false;
-      if (filter.scale && v.personnelType === 'civilian' && v.scale !== filter.scale) return false;
+
+      // Rank scopes the result to military, scale scopes it to civilian. With
+      // only one active, the other personnel type is hidden entirely; with both
+      // active, each type is shown filtered by its own criterion.
+      if (rankActive || scaleActive) {
+        if (v.personnelType === 'military') {
+          if (!rankActive || v.rank !== filter.rank) return false;
+        } else {
+          if (!scaleActive || v.scale !== filter.scale) return false;
+        }
+      }
+
       if (filter.functionDomain.length > 0 && !filter.functionDomain.includes(v.functionDomain)) return false;
       if (filter.locations.length > 0 && !filter.locations.some(l => v.locations.includes(l))) return false;
       if (filter.searchQuery) {
