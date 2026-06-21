@@ -1,9 +1,9 @@
 @if (vacancy()) {
-  <div class="page">
+  <div class="page" data-cy="detail-page">
     <!-- Back -->
     <div class="back-bar">
       <div class="inner">
-        <a routerLink="/" class="back-link">
+        <a routerLink="/" class="back-link" data-cy="back-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
           </svg>
@@ -33,8 +33,8 @@
                 </app-badge>
               }
             </div>
-            <h1 class="hero-title">{{ vacancy()!.title }}</h1>
-            <p class="hero-dept">{{ vacancy()!.department }}</p>
+            <h1 class="hero-title" data-cy="detail-title">{{ vacancy()!.title }}</h1>
+            <p class="hero-dept" data-cy="detail-department">{{ vacancy()!.department }}</p>
             <div class="hero-tags">
               @if (vacancy()!.rank) {
                 <div class="hero-tag">
@@ -64,7 +64,7 @@
           <!-- Right: contact card -->
           <div class="hero-right">
             <app-contact-section [contactPerson]="vacancy()!.contactPerson" theme="dark" />
-            <a [href]="mailtoLink()" class="solliciteer-btn" target="_blank" rel="noopener">
+            <a [href]="mailtoLink()" class="solliciteer-btn" data-cy="apply-button" target="_blank" rel="noopener">
               <mat-icon>send</mat-icon>
               Solliciteer
             </a>
@@ -152,8 +152,8 @@
     </div>
   </div>
 } @else {
-  <div class="not-found">
+  <div class="not-found" data-cy="not-found">
     <h2>Vacature niet gevonden</h2>
-    <a routerLink="/" class="back-link">Terug naar overzicht</a>
+    <a routerLink="/" class="back-link" data-cy="back-link">Terug naar overzicht</a>
   </div>
 }

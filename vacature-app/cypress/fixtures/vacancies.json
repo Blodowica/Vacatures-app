@@ -1,0 +1,145 @@
+{
+  "page": 1,
+  "pageSize": 500,
+  "total": 6,
+  "items": [
+    {
+      "id": "mil-1",
+      "title": "Software Engineer Defensie",
+      "department": "Joint IT Commando",
+      "personnelType": "military",
+      "rank": "Sergeant",
+      "scale": null,
+      "functionDomain": "Software Development",
+      "locations": ["Den Haag"],
+      "roleDescription": "Je bouwt veilige software voor operationele systemen.",
+      "dailyActivities": "Coderen, code reviews en overleg met het team.",
+      "weeklyCalendar": [
+        { "day": "monday", "title": "Sprint Planning", "startTime": "09:00", "endTime": "10:30", "description": "Wekelijkse planning" },
+        { "day": "tuesday", "title": "Feature Development", "startTime": "10:00", "endTime": "17:00", "description": "Ontwikkeling" }
+      ],
+      "workDistribution": [
+        { "category": "Ontwikkeling", "percentage": 70 },
+        { "category": "Overleg", "percentage": 30 }
+      ],
+      "skills": [
+        { "skillName": "Angular", "level": 4, "description": "Frontend framework" },
+        { "skillName": "TypeScript", "level": 5, "description": "Programmeertaal" }
+      ],
+      "contactPerson": { "name": "Jan de Vries", "email": "jan.devries@mindef.nl", "phone": "0612345678" }
+    },
+    {
+      "id": "mil-2",
+      "title": "Security Analist",
+      "department": "Defensie Cyber Commando",
+      "personnelType": "military",
+      "rank": "Korporaal",
+      "scale": null,
+      "functionDomain": "Cyber Security",
+      "locations": ["Amsterdam"],
+      "roleDescription": "Je analyseert dreigingen en bewaakt netwerken.",
+      "dailyActivities": "Monitoren, incident response en rapportage.",
+      "weeklyCalendar": [
+        { "day": "monday", "title": "Threat Monitoring", "startTime": "09:00", "endTime": "12:00", "description": "Monitoring" }
+      ],
+      "workDistribution": [
+        { "category": "Security", "percentage": 100 }
+      ],
+      "skills": [
+        { "skillName": "SIEM", "level": 5, "description": "Security monitoring" }
+      ],
+      "contactPerson": { "name": "Sara Bakker", "email": "sara.bakker@mindef.nl", "phone": "0698765432" }
+    },
+    {
+      "id": "mil-3",
+      "title": "DevOps Engineer",
+      "department": "Commando Landstrijdkrachten",
+      "personnelType": "military",
+      "rank": "Sergeant",
+      "scale": null,
+      "functionDomain": "DevOps",
+      "locations": ["Breda", "Den Haag"],
+      "roleDescription": "Je beheert CI/CD pipelines en cloudinfrastructuur.",
+      "dailyActivities": "Automatisering, monitoring en incidentbeheer.",
+      "weeklyCalendar": [
+        { "day": "wednesday", "title": "Pipeline Onderhoud", "startTime": "09:00", "endTime": "12:00", "description": "CI/CD" }
+      ],
+      "workDistribution": [
+        { "category": "Automatisering", "percentage": 60 },
+        { "category": "Incidentbeheer", "percentage": 40 }
+      ],
+      "skills": [
+        { "skillName": "Kubernetes", "level": 4, "description": "Container orchestratie" }
+      ],
+      "contactPerson": { "name": "Kim van den Berg", "email": "kim.vandenberg@mindef.nl", "phone": "0676543210" }
+    },
+    {
+      "id": "civ-1",
+      "title": "Backend Developer",
+      "department": "Bestuursstaf",
+      "personnelType": "civilian",
+      "rank": null,
+      "scale": "Schaal 10",
+      "functionDomain": "Software Development",
+      "locations": ["Utrecht"],
+      "roleDescription": "Je ontwikkelt en onderhoudt REST API's.",
+      "dailyActivities": "API-ontwerp, implementatie en testen.",
+      "weeklyCalendar": [
+        { "day": "thursday", "title": "API Development", "startTime": "10:00", "endTime": "16:00", "description": "Backend" }
+      ],
+      "workDistribution": [
+        { "category": "Ontwikkeling", "percentage": 80 },
+        { "category": "Testen", "percentage": 20 }
+      ],
+      "skills": [
+        { "skillName": "Node.js", "level": 4, "description": "Backend runtime" }
+      ],
+      "contactPerson": { "name": "Piet Jansen", "email": "piet.jansen@mindef.nl", "phone": "0611112222" }
+    },
+    {
+      "id": "civ-2",
+      "title": "Data Scientist",
+      "department": "Defensie Materieel Organisatie",
+      "personnelType": "civilian",
+      "rank": null,
+      "scale": "Schaal 11",
+      "functionDomain": "Data Science",
+      "locations": ["Den Haag"],
+      "roleDescription": "Je bouwt voorspellende modellen voor logistiek.",
+      "dailyActivities": "Data-analyse, modellering en visualisatie.",
+      "weeklyCalendar": [
+        { "day": "friday", "title": "Model Training", "startTime": "09:00", "endTime": "15:00", "description": "Analyse" }
+      ],
+      "workDistribution": [
+        { "category": "Analyse", "percentage": 100 }
+      ],
+      "skills": [
+        { "skillName": "Python", "level": 5, "description": "Data science" }
+      ],
+      "contactPerson": { "name": "Lisa Smit", "email": "lisa.smit@mindef.nl", "phone": "0633334444" }
+    },
+    {
+      "id": "civ-3",
+      "title": "Cloud Security Specialist",
+      "department": "Defensie Cyber Commando",
+      "personnelType": "civilian",
+      "rank": null,
+      "scale": "Schaal 12",
+      "functionDomain": "Cyber Security",
+      "locations": ["Amsterdam"],
+      "roleDescription": "Je beveiligt cloudomgevingen tegen aanvallen.",
+      "dailyActivities": "Cloud hardening, audits en compliance.",
+      "weeklyCalendar": [
+        { "day": "tuesday", "title": "Cloud Audit", "startTime": "09:00", "endTime": "13:00", "description": "Audit" }
+      ],
+      "workDistribution": [
+        { "category": "Security", "percentage": 75 },
+        { "category": "Compliance", "percentage": 25 }
+      ],
+      "skills": [
+        { "skillName": "AWS Security", "level": 4, "description": "Cloud security" }
+      ],
+      "contactPerson": { "name": "Tom de Wit", "email": "tom.dewit@mindef.nl", "phone": "0655556666" }
+    }
+  ]
+}

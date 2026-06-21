@@ -11,6 +11,11 @@
     "test": "ng test",
     "test:ci": "ng test --watch=false",
     "test:coverage": "ng test --watch=false --coverage",
+    "start:e2e": "ng serve --configuration e2e",
+    "cypress:open": "cypress open --e2e --browser electron",
+    "cypress:run": "cypress run --e2e --browser electron",
+    "e2e": "start-server-and-test start:e2e http://localhost:4200 cypress:run",
+    "e2e:open": "start-server-and-test start:e2e http://localhost:4200 cypress:open",
     "serve:ssr:vacature-app": "node dist/vacature-app/server/server.mjs"
   },
   "private": true,
@@ -39,9 +44,11 @@
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "cypress": "^15.17.0",
     "jsdom": "^28.0.0",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
+    "start-server-and-test": "^3.0.11",
     "tailwindcss": "^4.1.12",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"

@@ -5,9 +5,10 @@
     [multiple]="true"
     (selectionChange)="onChange($event)"
     aria-label="Locatie"
+    data-cy="location-select"
   >
     @for (loc of locations(); track loc) {
-      <mat-option [value]="loc">{{ loc }}</mat-option>
+      <mat-option [value]="loc" data-cy="location-option">{{ loc }}</mat-option>
     }
   </mat-select>
 </mat-form-field>

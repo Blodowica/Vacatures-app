@@ -4,8 +4,9 @@
   (change)="onChange($event)"
   aria-label="Functiedomein"
   class="chip-list"
+  data-cy="domain-filter"
 >
   @for (domain of domains(); track domain) {
-    <mat-chip-option [value]="domain">{{ domain }}</mat-chip-option>
+    <mat-chip-option [value]="domain" data-cy="domain-option">{{ domain }}</mat-chip-option>
   }
 </mat-chip-listbox>

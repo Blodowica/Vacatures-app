@@ -1,11 +1,16 @@
-@if (filterService.totalCount() === 0) {
-  <div class="empty-state" role="status">
+@if (vacancyService.loading()) {
+  <div class="loading-state" role="status" aria-live="polite" data-cy="loading-state">
+    <mat-progress-spinner mode="indeterminate" diameter="48" strokeWidth="4" />
+    <p class="loading-text">Vacatures laden…</p>
+  </div>
+} @else if (filterService.totalCount() === 0) {
+  <div class="empty-state" role="status" data-cy="empty-state">
     <div class="empty-icon">
       <mat-icon>search_off</mat-icon>
     </div>
     <h3 class="empty-title">Geen vacatures gevonden</h3>
     <p class="empty-text">Pas je filters of zoekopdracht aan om meer resultaten te zien.</p>
-    <button mat-flat-button class="empty-reset" (click)="filterService.resetFilters()">
+    <button mat-flat-button class="empty-reset" data-cy="empty-reset" (click)="filterService.resetFilters()">
       <mat-icon>refresh</mat-icon>
       Alle filters wissen
     </button>
@@ -16,6 +21,8 @@
       @if (section.sectionTitle) {
         <button
           class="section-header"
+          data-cy="section-header"
+          [attr.data-cy-section]="section.personnelType"
           [class.military]="section.personnelType === 'military'"
           [class.civilian]="section.personnelType === 'civilian'"
           (click)="toggleSection(section.sectionTitle)"

@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "types": ["cypress", "node"],
+    "lib": ["es2022", "dom"],
+    "moduleResolution": "bundler",
+    "noEmit": true
+  },
+  "include": [
+    "**/*.ts",
+    "../node_modules/cypress/types/**/*.d.ts"
+  ]
+}

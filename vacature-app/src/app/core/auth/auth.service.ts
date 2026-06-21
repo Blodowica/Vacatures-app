@@ -53,6 +53,9 @@ export class AuthService {
         onLoad: 'check-sso',
         silentCheckSsoRedirectUri: `${window.location.origin}/silent-check-sso.html`,
         pkceMethod: 'S256',
+        // Cap the silent check-sso wait (default ~10s) so an unreachable SSO
+        // server resolves quickly instead of leaving a pending iframe.
+        messageReceiveTimeout: 3000,
       });
 
       this.isAuthenticated.set(authenticated);

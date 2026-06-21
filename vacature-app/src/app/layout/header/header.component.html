@@ -2,7 +2,7 @@
   <div class="toolbar-inner">
 
     <!-- Brand -->
-    <a routerLink="/" class="brand" aria-label="Vacancy Explorer – naar startpagina">
+    <a routerLink="/" class="brand" data-cy="brand-link" aria-label="Vacancy Explorer – naar startpagina">
       <div class="brand-logo" aria-hidden="true">
         <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
           <rect width="32" height="32" rx="8" fill="rgba(255,255,255,0.12)" />
@@ -25,7 +25,7 @@
     <div class="user-area">
       @if (auth.isAuthenticated()) {
         <!-- Authenticated: user dropdown -->
-        <button mat-button class="user-btn" [matMenuTriggerFor]="userMenu" aria-label="Gebruikersmenu">
+        <button mat-button class="user-btn" data-cy="user-menu-button" [matMenuTriggerFor]="userMenu" aria-label="Gebruikersmenu">
           <div class="avatar" aria-hidden="true">{{ auth.initials() }}</div>
           <span class="user-name">{{ auth.displayName() }}</span>
           <mat-icon class="chevron">expand_more</mat-icon>
@@ -52,7 +52,7 @@
         </mat-menu>
       } @else {
         <!-- Unauthenticated: login button -->
-        <button mat-flat-button class="login-btn" (click)="auth.login()" aria-label="Inloggen via Keycloak">
+        <button mat-flat-button class="login-btn" data-cy="login-button" (click)="auth.login()" aria-label="Inloggen via Keycloak">
           <mat-icon>login</mat-icon>
           Inloggen
         </button>

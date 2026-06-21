@@ -15,27 +15,40 @@ export class VacancyService {
 
   readonly vacancies = signal<Vacancy[]>([]);
   readonly loadError = signal<string | null>(null);
+  // Starts `true` so the overview shows a spinner (instead of a misleading
+  // "no vacancies" empty state) until the first load finishes — including
+  // during SSR, where the fetch only runs after hydration on the client.
+  readonly loading = signal(true);
 
   constructor() {
     if (!this.isBrowser) return;
 
     if (sessionStorage.getItem(MOCK_SESSION_KEY) === 'true') {
-      this.mockRepo.getAll().subscribe(data => this.vacancies.set(data));
+      this.loading.set(true);
+      this.mockRepo.getAll().subscribe(data => {
+        this.vacancies.set(data);
+        this.loading.set(false);
+      });
     } else {
       this.fetchFromApi();
     }
   }
 
   private fetchFromApi(): void {
+    this.loading.set(true);
     this.repo.getAll().pipe(
       catchError(err => {
         const message = err.status === 0
           ? 'Kan geen verbinding maken met de API-server. Controleer of de backend actief is.'
           : `De server heeft een fout geretourneerd (${err.status} ${err.statusText}).`;
         this.loadError.set(message);
+        this.loading.set(false);
         return EMPTY;
       })
-    ).subscribe(data => this.vacancies.set(data));
+    ).subscribe(data => {
+      this.vacancies.set(data);
+      this.loading.set(false);
+    });
   }
 
   loadMockData(): void {
@@ -43,7 +56,11 @@ export class VacancyService {
       sessionStorage.setItem(MOCK_SESSION_KEY, 'true');
     }
     this.loadError.set(null);
-    this.mockRepo.getAll().subscribe(data => this.vacancies.set(data));
+    this.loading.set(true);
+    this.mockRepo.getAll().subscribe(data => {
+      this.vacancies.set(data);
+      this.loading.set(false);
+    });
   }
 
   getById(id: string): Vacancy | undefined {

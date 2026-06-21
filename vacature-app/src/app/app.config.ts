@@ -19,7 +19,13 @@ export const appConfig: ApplicationConfig = {
     { provide: VACANCY_REPOSITORY, useClass: VacancyApiRepository },
     {
       provide: APP_INITIALIZER,
-      useFactory: (auth: AuthService) => () => auth.init(),
+      // Fire-and-forget: start the Keycloak SSO check but DON'T return its
+      // promise, so app bootstrap (and the vacancy fetch) is not blocked.
+      // keycloak-js' silent check-sso can take ~10s to time out when the SSO
+      // server is unreachable; awaiting it here left the UI blank that whole
+      // time. Vacancies are public, so the page renders immediately and the
+      // header's auth state simply updates once init resolves in the background.
+      useFactory: (auth: AuthService) => () => { void auth.init(); },
       deps: [AuthService],
       multi: true,
     },

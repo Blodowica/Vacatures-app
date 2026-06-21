@@ -2,6 +2,7 @@
   <mat-icon matPrefix class="search-prefix-icon">search</mat-icon>
   <input
     matInput
+    data-cy="search-input"
     [formControl]="searchControl"
     placeholder="Zoek vacatures..."
     type="search"
@@ -9,7 +10,7 @@
     aria-label="Vacatures zoeken"
   />
   @if (searchControl.value) {
-    <button matSuffix mat-icon-button aria-label="Wis zoekopdracht" (click)="clear()">
+    <button matSuffix mat-icon-button data-cy="search-clear" aria-label="Wis zoekopdracht" (click)="clear()">
       <mat-icon>close</mat-icon>
     </button>
   }

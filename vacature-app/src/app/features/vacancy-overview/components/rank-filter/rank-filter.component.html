@@ -3,8 +3,9 @@
   (change)="onChange($event)"
   aria-label="Rang"
   class="chip-list"
+  data-cy="rank-filter"
 >
   @for (rank of ranks(); track rank) {
-    <mat-chip-option [value]="rank">{{ rank }}</mat-chip-option>
+    <mat-chip-option [value]="rank" data-cy="rank-option">{{ rank }}</mat-chip-option>
   }
 </mat-chip-listbox>

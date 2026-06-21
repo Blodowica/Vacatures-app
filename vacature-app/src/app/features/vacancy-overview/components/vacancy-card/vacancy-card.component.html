@@ -1,4 +1,4 @@
-<mat-card class="vcard" [routerLink]="['/vacatures', vacancy().id]" tabindex="0">
+<mat-card class="vcard" data-cy="vacancy-card" [attr.data-cy-id]="vacancy().id" [routerLink]="['/vacatures', vacancy().id]" tabindex="0">
   <mat-card-content class="vcard-content">
     <div class="vcard-top">
       <mat-chip-set class="chip-row" aria-label="Labels">
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <h3 class="vcard-title">{{ vacancy().title }}</h3>
+    <h3 class="vcard-title" data-cy="vacancy-card-title">{{ vacancy().title }}</h3>
     <p class="vcard-dept">{{ vacancy().department }}</p>
 
     <div class="vcard-meta">

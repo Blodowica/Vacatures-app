@@ -3,8 +3,9 @@
   (change)="onChange($event)"
   aria-label="Schaal"
   class="chip-list"
+  data-cy="scale-filter"
 >
   @for (scale of scales(); track scale) {
-    <mat-chip-option [value]="scale">{{ scale }}</mat-chip-option>
+    <mat-chip-option [value]="scale" data-cy="scale-option">{{ scale }}</mat-chip-option>
   }
 </mat-chip-listbox>

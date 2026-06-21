@@ -9,7 +9,7 @@ import { VacancyService } from '../../services/vacancy.service';
   standalone: true,
   imports: [MatDialogModule, MatButtonModule, MatIconModule],
   template: `
-    <div class="dialog-wrapper">
+    <div class="dialog-wrapper" data-cy="api-error-dialog">
       <div class="dialog-header">
         <mat-icon class="error-icon">cloud_off</mat-icon>
         <h2 mat-dialog-title>Verbinding mislukt</h2>
@@ -24,8 +24,8 @@ import { VacancyService } from '../../services/vacancy.service';
       </mat-dialog-content>
 
       <mat-dialog-actions align="end">
-        <button mat-button mat-dialog-close>Sluiten</button>
-        <button mat-flat-button color="primary" (click)="loadMockData()">
+        <button mat-button mat-dialog-close data-cy="dismiss-error">Sluiten</button>
+        <button mat-flat-button color="primary" data-cy="load-mock-data" (click)="loadMockData()">
           <mat-icon>storage</mat-icon>
           Laad mock data
         </button>

@@ -6,6 +6,6 @@
   hideSingleSelectionIndicator
 >
   @for (opt of options; track opt.value) {
-    <mat-button-toggle [value]="opt.value">{{ opt.label }}</mat-button-toggle>
+    <mat-button-toggle [value]="opt.value" [attr.data-cy]="'personnel-type-' + opt.value">{{ opt.label }}</mat-button-toggle>
   }
 </mat-button-toggle-group>

@@ -1,12 +1,12 @@
 <!-- Mobile filter overlay backdrop -->
 @if (showMobileFilters()) {
-  <div class="backdrop" (click)="closeMobileFilters()" aria-hidden="true"></div>
+  <div class="backdrop" data-cy="filter-backdrop" (click)="closeMobileFilters()" aria-hidden="true"></div>
 }
 
 <div class="page">
 
   <!-- Sidebar (desktop: always visible | mobile: slide-in overlay) -->
-  <aside class="sidebar" [class.sidebar-open]="showMobileFilters()" aria-label="Filteropties">
+  <aside class="sidebar" data-cy="filter-sidebar" [class.sidebar-open]="showMobileFilters()" aria-label="Filteropties">
     <div class="sidebar-inner">
       <app-filter-panel (close)="closeMobileFilters()" />
     </div>
@@ -22,6 +22,7 @@
         <button
           mat-button
           class="filter-toggle"
+          data-cy="mobile-filter-toggle"
           (click)="toggleMobileFilters()"
           [attr.aria-expanded]="showMobileFilters()"
           aria-controls="sidebar"
@@ -39,9 +40,9 @@
         </button>
 
         <div class="results-meta">
-          <h1 class="results-title">Vacatures</h1>
-          <span class="results-count">
-            <strong>{{ filterService.totalCount() }}</strong>
+          <h1 class="results-title" data-cy="results-title">Vacatures</h1>
+          <span class="results-count" data-cy="results-count">
+            <strong data-cy="results-count-value">{{ filterService.totalCount() }}</strong>
             {{ filterService.totalCount() === 1 ? 'resultaat' : 'resultaten' }}
           </span>
         </div>
@@ -49,7 +50,7 @@
 
       <div class="results-bar-right">
         @if (filterService.activeFilterCount() > 0) {
-          <button mat-button class="clear-filters-btn" (click)="filterService.resetFilters()">
+          <button mat-button class="clear-filters-btn" data-cy="clear-filters" (click)="filterService.resetFilters()">
             <mat-icon>close</mat-icon>
             Filters wissen ({{ filterService.activeFilterCount() }})
           </button>
