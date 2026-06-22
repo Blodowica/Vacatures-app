@@ -149,11 +149,14 @@ jobs:
           project: vacatures-app
           # Scan the Angular app folder (reads package-lock.json / node_modules).
           path: vacature-app
-          format: HTML,SARIF
+          # The `format` input takes ONE value; pass the extra format via --format
+          # in args (the CLI accepts multiple --format flags, not "HTML,SARIF").
+          format: HTML
           # Fail the job on a CVSS >= 7 (HIGH) vulnerability, matching Snyk.
           # The NVD API key avoids severe rate-limiting when refreshing the CVE
           # database — without it the scan is very slow and may fail.
           args: >-
+            --format SARIF
             --failOnCVSS 7
             --nvdApiKey ${{ secrets.NVD_API_KEY }}
 
