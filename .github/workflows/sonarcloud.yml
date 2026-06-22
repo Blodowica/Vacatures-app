@@ -1,0 +1,48 @@
+name: SonarQube Cloud
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    name: Test & analyze
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Full history so SonarQube Cloud can attribute new code / blame.
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: vacature-app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: vacature-app
+        # The unit tests + Sonar scan don't need the Cypress binary, so skip its
+        # (large) download to keep CI fast.
+        run: npm ci
+        env:
+          CYPRESS_INSTALL_BINARY: 0
+
+      - name: Run unit tests with coverage
+        working-directory: vacature-app
+        run: npm run test:coverage
+
+      - name: SonarQube Cloud scan
+        uses: SonarSource/sonarqube-scan-action@v8
+        with:
+          # The Angular app (and sonar-project.properties) live in this subfolder.
+          projectBaseDir: vacature-app
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
