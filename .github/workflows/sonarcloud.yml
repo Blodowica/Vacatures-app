@@ -3,12 +3,13 @@
 #   1. "Unit tests & coverage"     -> compiles tests + produces the LCOV report
 #   2. "SonarQube Cloud analysis"  -> scans the code and checks the Quality Gate
 #   3. "Snyk dependency scan"      -> checks dependencies for known CVEs
+#   4. "Gitleaks secret scan"      -> scans git history for committed secrets
 #
 # Job 2 only runs if job 1 passes (`needs: test`) and reuses job 1's coverage
-# report via an uploaded artifact. Job 3 is independent and runs in parallel.
-# Each job's steps are listed separately, so a red ✗ points straight at the
-# failing step.
-name: CI – Tests, SonarQube Cloud & Snyk
+# report via an uploaded artifact. Jobs 3 and 4 are independent and run in
+# parallel. Each job's steps are listed separately, so a red ✗ points straight
+# at the failing step.
+name: CI – Tests, SonarQube Cloud, Snyk & Gitleaks
 
 on:
   push:
@@ -117,3 +118,19 @@ jobs:
         run: snyk test --severity-threshold=high
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+  gitleaks:
+    name: Gitleaks secret scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Full history so Gitleaks scans every commit, not just the latest.
+          fetch-depth: 0
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          # Provided automatically by GitHub Actions; no secret to add yourself.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
