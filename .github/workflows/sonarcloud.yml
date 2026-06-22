@@ -1,12 +1,14 @@
 # Single CI workflow, split into clearly-named jobs so the run page shows at a
 # glance WHERE something failed:
-#   1. "Unit tests & coverage"  -> compiles tests + produces the LCOV report
-#   2. "SonarQube Cloud analysis" -> scans the code and checks the Quality Gate
+#   1. "Unit tests & coverage"     -> compiles tests + produces the LCOV report
+#   2. "SonarQube Cloud analysis"  -> scans the code and checks the Quality Gate
+#   3. "Snyk dependency scan"      -> checks dependencies for known CVEs
 #
 # Job 2 only runs if job 1 passes (`needs: test`) and reuses job 1's coverage
-# report via an uploaded artifact. Each job's steps are still listed separately,
-# so a red ✗ points straight at the failing step.
-name: CI – Tests & SonarQube Cloud
+# report via an uploaded artifact. Job 3 is independent and runs in parallel.
+# Each job's steps are listed separately, so a red ✗ points straight at the
+# failing step.
+name: CI – Tests, SonarQube Cloud & Snyk
 
 on:
   push:
@@ -83,3 +85,35 @@ jobs:
           scanMetadataReportFile: vacature-app/.scannerwork/report-task.txt
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  snyk:
+    name: Snyk dependency scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: vacature-app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: vacature-app
+        run: npm ci
+        env:
+          CYPRESS_INSTALL_BINARY: 0
+
+      - name: Install Snyk CLI
+        run: npm install -g snyk
+
+      - name: Snyk test (dependencies)
+        working-directory: vacature-app
+        # Fails the job when a vulnerability of HIGH severity or above is found.
+        # Lower the bar with --severity-threshold=medium, or drop the flag to
+        # report everything.
+        run: snyk test --severity-threshold=high
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
