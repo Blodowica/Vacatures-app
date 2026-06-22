@@ -4,12 +4,13 @@
 #   2. "SonarQube Cloud analysis"  -> scans the code and checks the Quality Gate
 #   3. "Snyk dependency scan"      -> checks dependencies for known CVEs
 #   4. "Gitleaks secret scan"      -> scans git history for committed secrets
+#   5. "OWASP Dependency-Check"    -> checks dependencies for known CVEs (NVD)
 #
 # Job 2 only runs if job 1 passes (`needs: test`) and reuses job 1's coverage
-# report via an uploaded artifact. Jobs 3 and 4 are independent and run in
-# parallel. Each job's steps are listed separately, so a red ✗ points straight
-# at the failing step.
-name: CI – Tests, SonarQube Cloud, Snyk & Gitleaks
+# report via an uploaded artifact. Jobs 3-5 are independent and run in parallel.
+# Each job's steps are listed separately, so a red ✗ points straight at the
+# failing step.
+name: CI – Tests, SonarQube Cloud, Snyk, Gitleaks & OWASP
 
 on:
   push:
@@ -134,3 +135,32 @@ jobs:
         env:
           # Provided automatically by GitHub Actions; no secret to add yourself.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  owasp:
+    name: OWASP Dependency-Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run OWASP Dependency-Check
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: vacatures-app
+          # Scan the Angular app folder (reads package-lock.json / node_modules).
+          path: vacature-app
+          format: HTML,SARIF
+          # Fail the job on a CVSS >= 7 (HIGH) vulnerability, matching Snyk.
+          # The NVD API key avoids severe rate-limiting when refreshing the CVE
+          # database — without it the scan is very slow and may fail.
+          args: >-
+            --failOnCVSS 7
+            --nvdApiKey ${{ secrets.NVD_API_KEY }}
+
+      - name: Upload Dependency-Check report
+        uses: actions/upload-artifact@v4
+        # Upload even when the job fails, so you can read WHY it failed.
+        if: always()
+        with:
+          name: owasp-dependency-check-report
+          path: ${{ github.workspace }}/reports
