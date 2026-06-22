@@ -11,6 +11,8 @@
     "test": "ng test",
     "test:ci": "ng test --watch=false",
     "test:coverage": "ng test --watch=false --coverage",
+    "sonar:local": "npm run test:coverage && node scripts/sonar-local.mjs",
+    "sonar:scan:local": "node scripts/sonar-local.mjs",
     "start:e2e": "ng serve --configuration e2e",
     "cypress:open": "cypress open --e2e --browser electron",
     "cypress:run": "cypress run --e2e --browser electron",

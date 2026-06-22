@@ -29,6 +29,9 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# SonarScanner CLI work dir (local SonarQube analysis)
+/.scannerwork
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/

@@ -1,4 +1,12 @@
-name: SonarQube Cloud
+# Single CI workflow, split into clearly-named jobs so the run page shows at a
+# glance WHERE something failed:
+#   1. "Unit tests & coverage"  -> compiles tests + produces the LCOV report
+#   2. "SonarQube Cloud analysis" -> scans the code and checks the Quality Gate
+#
+# Job 2 only runs if job 1 passes (`needs: test`) and reuses job 1's coverage
+# report via an uploaded artifact. Each job's steps are still listed separately,
+# so a red ✗ points straight at the failing step.
+name: CI – Tests & SonarQube Cloud
 
 on:
   push:
@@ -8,16 +16,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  analyze:
-    name: Test & analyze
+  test:
+    name: Unit tests & coverage
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # Full history so SonarQube Cloud can attribute new code / blame.
-          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -38,6 +42,31 @@ jobs:
         working-directory: vacature-app
         run: npm run test:coverage
 
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lcov-coverage
+          path: vacature-app/coverage/vacature-app/lcov.info
+          # Fail loudly here rather than letting Sonar silently report 0% later.
+          if-no-files-found: error
+
+  sonarcloud:
+    name: SonarQube Cloud analysis
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Full history so SonarQube Cloud can attribute new code / blame.
+          fetch-depth: 0
+
+      - name: Download coverage report
+        uses: actions/download-artifact@v4
+        with:
+          name: lcov-coverage
+          path: vacature-app/coverage/vacature-app
+
       - name: SonarQube Cloud scan
         uses: SonarSource/sonarqube-scan-action@v8
         with:
@@ -46,3 +75,11 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
+
+      - name: Check Quality Gate
+        uses: SonarSource/sonarqube-quality-gate-action@v1
+        timeout-minutes: 5
+        with:
+          scanMetadataReportFile: vacature-app/.scannerwork/report-task.txt
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
