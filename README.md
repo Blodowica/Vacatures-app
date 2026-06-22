@@ -1,3 +1,3 @@
 # Vacatures-app
 
-app for vacature 
+app for vacature.
